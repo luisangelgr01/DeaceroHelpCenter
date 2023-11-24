@@ -68,6 +68,42 @@
     });
   });
 
+  // ===== Problem accordion
+  const problems = document.querySelectorAll(".single-problem");
+  problems.forEach((el) => {
+    el.querySelector(".problem-btn").addEventListener("click", () => {
+      el.querySelector(".icon-problem").classList.toggle("rotate-180");
+      el.querySelector(".problem-content").classList.toggle("hidden");
+    });
+  });
+
+  // ===== Change accordion
+  const changes = document.querySelectorAll(".single-change");
+  changes.forEach((el) => {
+    el.querySelector(".change-btn").addEventListener("click", () => {
+      el.querySelector(".icon-change").classList.toggle("rotate-180");
+      el.querySelector(".change-content").classList.toggle("hidden");
+    });
+  });
+
+  // ===== Incident accordion
+  const incidents = document.querySelectorAll(".single-incident");
+  incidents.forEach((el) => {
+    el.querySelector(".incident-btn").addEventListener("click", () => {
+      el.querySelector(".icon-incident").classList.toggle("rotate-180");
+      el.querySelector(".incident-content").classList.toggle("hidden");
+    });
+  });
+
+  // ===== Request accordion
+  const requests = document.querySelectorAll(".single-request");
+  requests.forEach((el) => {
+    el.querySelector(".request-btn").addEventListener("click", () => {
+      el.querySelector(".icon-request").classList.toggle("rotate-180");
+      el.querySelector(".request-content").classList.toggle("hidden");
+    });
+  });
+
   // ===== wow js
   new WOW().init();
 
