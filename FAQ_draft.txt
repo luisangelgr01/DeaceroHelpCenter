@@ -13,14 +13,14 @@
     
 
 ¿Dónde puedo consultar el detalle de las solicitudes reportadas a la Mesa de Servicio?
-    En el Help Center hay un apartado de Reportes para consultarlos haz click
+    En el Help Center hay un apartado de Reportes, para consultarlos haz click
     <a class="hover:underline text-secondary" href="ReportesSolicitudes.html">
         aquí.
     </a>
 
 ¿Cuánto tiempo tardará mi solicitud de TyD?
     El tiempo que tardará la solicitud dependerá de la categoria en la que cae el servicio en cuestión
-    (GOLD, SILVER o BRONZE). Para consultar mayor información acerca de la categorización de servicios
+    (GOLD, SILVER o BRONZE). Para consultar mayor información acerca de la categorización de servicios,
     ingresa al apartado de
     <a class="hover:underline text-secondary" href="CategorizacionServiciosTyD.html">
         Categorización de los Servicios de Transformación y Digital.
@@ -43,7 +43,7 @@
     <a class="hover:underline text-secondary" href="#contact">
         Contacto
     </a>
-    de esta página, se encuentra un tarjeta para ingresar datos y enviar una sugerencia para contactarnos.
+    de esta página, se encuentra una tarjeta para ingresar datos y enviar una sugerencia para contactarnos.
 
 ¿Seguirá activo el sistema de tickets anterior?
     Sí, para todos aquellos servicios fuera de TyD se seguirá utilizando el sistema de tickest anterior (STI).
