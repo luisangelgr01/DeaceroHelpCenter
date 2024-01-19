@@ -1,0 +1,53 @@
+
+¿Cómo usar Jira Service Management - solicitud de servicios?
+    Jira es una herramienta de software utilizada para gestionar los servicios de TyD.
+    Mediante el Help Center, es posible crear y dar seguimiento a tickets llenando formularios.
+    Para obtener más información acerca del uso de Jira, consulta los archivos de
+    <a class="hover:underline text-secondary" href="https://deacero0.sharepoint.com/:p:/t/MacroProceso-TecnologayDigital/EQTab8ovSFVIgFqEvlRSHJQB4iKyKzeibIeEDo4UyC0faA?e=HYysQ8">
+        Manual de usuario
+    </a>
+    y
+    <a class="hover:underline text-secondary" href="https://deacero0.sharepoint.com/:p:/t/MacroProceso-TecnologayDigital/EQdearXB7wdCiQHXqPfEUhYBD2uS0hGYJJp8BmgfTYpYFg?e=lDgT6a">
+        Manual Técnico.
+    </a>
+    
+
+¿Dónde puedo consultar el detalle de las solicitudes reportadas a la Mesa de Servicio?
+    En el Help Center hay un apartado de Reportes, para consultarlos haz click
+    <a class="hover:underline text-secondary" href="ReportesSolicitudes.html">
+        aquí.
+    </a>
+
+¿Cuánto tiempo tardará mi solicitud de TyD?
+    El tiempo que tardará la solicitud dependerá de la categoria en la que cae el servicio en cuestión
+    (GOLD, SILVER o BRONZE). Para consultar mayor información acerca de la categorización de servicios,
+    ingresa al apartado de
+    <a class="hover:underline text-secondary" href="CategorizacionServiciosTyD.html">
+        Categorización de los Servicios de Transformación y Digital.
+    </a>
+    
+
+¿Dónde puedo consultar el estatus de los servicios?
+    En este 
+    <a class="hover:underline text-secondary" href="#Home">
+        Help Center,
+    </a>
+    hay una liga al
+    <a class="hover:underline text-secondary" href="https://deacero.statuspage.io/private-only?page=wgswt9psc0ls">
+        Dashboard de Estatus de Servicios
+    </a>
+    donde se puede consultar el estado de los servicios que ofrece TyD en tiempo real.
+
+¿Dónde puedo hacer sugerencias para el Help Center de Decero?
+    En la sección de
+    <a class="hover:underline text-secondary" href="#contact">
+        Contacto
+    </a>
+    de esta página, se encuentra una tarjeta para ingresar datos y enviar una sugerencia para contactarnos.
+
+¿Seguirá activo el sistema de tickets anterior?
+    Sí, para todos aquellos servicios fuera de TyD se seguirá utilizando el sistema de tickest anterior (STI).
+    Para levanta un ticket, busca la opción deseada dentro de este Help Center
+    <a class="hover:underline text-secondary" href="#servicios">
+        (Servicios).
+    </a>
