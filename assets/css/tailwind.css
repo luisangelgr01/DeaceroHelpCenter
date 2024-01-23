@@ -2630,12 +2630,6 @@ div .popup {
   font-weight: bold;
 }
 
-.popup-button-container {
-  width: 100%;
-  display: flex;
-  justify-content: space-evenly;
-}
-
 .popup-button {
   margin-top: 10px;
   padding: 8px;
