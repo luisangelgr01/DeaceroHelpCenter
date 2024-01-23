@@ -2292,6 +2292,10 @@ body {
     width: 100%;
   }
 
+  .lg\:h-full{
+    height: 100%;
+  }
+
   .lg\:max-w-\[565px\]{
     max-width: 565px;
   }
