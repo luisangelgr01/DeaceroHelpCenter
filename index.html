@@ -192,10 +192,11 @@
             
             <div class="hidden justify-end pr-16 sm:flex lg:pr-0">
               <a
-                href="index.html"
+                href="javascript:void(0)"
+                onclick="signOut()"
                 class="signUpBtn rounded-lg bg-white bg-opacity-20 py-2 px-2 text-sm font-medium text-white duration-300 ease-in-out hover:bg-opacity-100 hover:text-dark"
               >
-                Sign out
+                cerrar sesión
               </a>
             </div>
           </div>
@@ -5853,22 +5854,23 @@
       window.document.addEventListener("scroll", onScroll);
 </script>
     <script>
+      const msalConfig = {
+        auth: {
+          clientId: "e64b5fb7-5b8d-4562-b06f-3a59d1c79a21",
+          authority: "https://login.microsoftonline.com/a4067d12-2fc0-4367-a213-9e4031cbc173",
+          redirectUri: "https://helpcenter.deacero.com/",
+          knownAuthorities: ["https://login.microsoftonline.com/a4067d12-2fc0-4367-a213-9e4031cbc173"],
+        },
+        cache: {
+          cacheLocation: "localStorage",
+          storeAuthStateInCookie: false,
+        }
+      };
+  
+      const msalInstance = new msal.PublicClientApplication(msalConfig);
+  
       document.addEventListener('DOMContentLoaded', async function () {
-        const msalConfig = {
-          auth: {
-            clientId: "e64b5fb7-5b8d-4562-b06f-3a59d1c79a21",
-            authority: "https://login.microsoftonline.com/a4067d12-2fc0-4367-a213-9e4031cbc173",
-            redirectUri: "https://helpcenter.deacero.com/",
-            knownAuthorities: ["https://login.microsoftonline.com/a4067d12-2fc0-4367-a213-9e4031cbc173"],
-          },
-          cache: {
-            cacheLocation: "localStorage",
-            storeAuthStateInCookie: false,
-          }
-        };
-    
-        const msalInstance = new msal.PublicClientApplication(msalConfig);
-    
+
         try {
           // Intentar obtener un token de acceso silenciosamente
           const silentResult = await msalInstance.acquireTokenSilent({
@@ -5909,7 +5911,12 @@
             console.error("User not authenticated");
           }
         }
+
       });
-    </script>       
+
+      const signOut = () =>{
+        msalInstance.logout();
+      }
+    </script>
   </body>
 </html>
