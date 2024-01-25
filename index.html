@@ -12,9 +12,11 @@
     />
     <link rel="stylesheet" href="assets/css/animate.css" />
     <link rel="stylesheet" href="assets/css/tailwind.css" />
+    <link rel="stylesheet" href="assets/css/popup.css" />
         <!-- ==== SSO AZURE ==== -->
     <script src="https://alcdn.msauth.net/browser/2.17.0/js/msal-browser.min.js"></script>
-
+    <script src="assets/js/sso-azure.js"></script>
+    
     <!-- ==== WOW JS ==== -->
     <script src="assets/js/wow.min.js"></script>
     <script>
@@ -29,12 +31,12 @@
           <div>
             Por favor, indica la dirección a la que perteneces.
           </div>
-          <a href="vistaUsuarioTyD.html">
+          <a href="VistaUsuarioTyD.html">
             <div class="popup-button">
               <span class="popuptext" id="myPopup"> Dirección de Transformación y Digital</span>
             </div>
           </a>
-          <a href="vistaUsuarioNoTyD.html">
+          <a href="VistaUsuarioNoTyD.html">
             <div class="popup-button">
               <span class="popuptext" id="myPopup">Otra dirección</span>
             </div>
@@ -161,7 +163,7 @@
                   </li>
                   <li class="group relative">
                     <a
-                      href="vistaUsuarioTyD.html"
+                      href="VistaUsuarioTyD.html"
                       class="mx-8 flex py-2 text-base text-dark group-hover:text-secondary lg:mr-0 lg:ml-7 lg:inline-flex lg:py-6 lg:px-0 lg:text-white lg:group-hover:text-white lg:group-hover:opacity-70 xl:ml-12"
                     >
                       VistaUsuarioTyD
@@ -5853,70 +5855,5 @@
 
       window.document.addEventListener("scroll", onScroll);
 </script>
-    <script>
-      const msalConfig = {
-        auth: {
-          clientId: "e64b5fb7-5b8d-4562-b06f-3a59d1c79a21",
-          authority: "https://login.microsoftonline.com/a4067d12-2fc0-4367-a213-9e4031cbc173",
-          redirectUri: "https://helpcenter.deacero.com/",
-          knownAuthorities: ["https://login.microsoftonline.com/a4067d12-2fc0-4367-a213-9e4031cbc173"],
-        },
-        cache: {
-          cacheLocation: "localStorage",
-          storeAuthStateInCookie: false,
-        }
-      };
-  
-      const msalInstance = new msal.PublicClientApplication(msalConfig);
-  
-      document.addEventListener('DOMContentLoaded', async function () {
-
-        try {
-          // Intentar obtener un token de acceso silenciosamente
-          const silentResult = await msalInstance.acquireTokenSilent({
-            scopes: ["openid", "profile", "user.read"], // Ajusta los alcances según tus necesidades
-          });
-    
-          // Token de acceso renovado exitosamente
-          console.log("Token renew success:", silentResult);
-          getUserProfile();
-        } catch (silentError) {
-          // La autenticación silenciosa no pudo renovar el token, intentar iniciar sesión
-          console.log("Attempting login...");
-          msalInstance.loginRedirect()
-            .catch((loginError) => {
-              console.error("Login error:", loginError);
-            });
-        }
-    
-        // Manejar la redirección después del inicio de sesión
-        msalInstance.handleRedirectPromise()
-          .then((response) => {
-            if (response) {
-              console.log("Login success:", response);
-              getUserProfile();
-            }
-          })
-          .catch((error) => {
-            console.error("Login error:", error);
-          });
-    
-        // Función para obtener el perfil del usuario
-        function getUserProfile() {
-          const user = msalInstance.getAccount();
-          if (user) {
-            console.log("User profile:", user);
-            console.log("User email:", user.idTokenClaims.email);
-          } else {
-            console.error("User not authenticated");
-          }
-        }
-
-      });
-
-      const signOut = () =>{
-        msalInstance.logout();
-      }
-    </script>
   </body>
 </html>
