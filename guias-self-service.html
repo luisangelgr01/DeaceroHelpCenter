@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HelpCenter | Guías Self Service </title>
+    <link
+      rel="shortcut icon"
+      href="assets/images/favicon.ico"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="assets/css/animate.css" />
+    <link rel="stylesheet" href="assets/css/tailwind.css" />
+    <!-- ==== SSO AZURE ==== -->
+    <script src="https://alcdn.msauth.net/browser/2.17.0/js/msal-browser.min.js"></script>
+    <script src="assets/js/sso-azure.js"></script>
+
+    <!-- ==== WOW JS ==== -->
+    <script src="assets/js/wow.min.js"></script>
+    <script>
+      new WOW().init();
+    </script>
+  </head>
+  <body>
+    <!-- ====== Navbar Section Start -->
+    <div
+      class="ud-header absolute top-0 left-0 z-40 flex w-full items-center bg-transparent"
+    >
+      <div class="container">
+        <div class="relative -mx-4 flex items-center justify-between">
+          <div class="w-60 max-w-full px-4">
+            <a href="index.html" class="navbar-logo block w-full py-5">
+              <img
+                src="assets/images/logo/logo-white.svg"
+                alt="logo"
+                class="header-logo w-full"
+              />
+            </a>
+          </div>
+          <div class="flex w-full items-center justify-between px-4">
+            <div>
+              <button
+                id="navbarToggler"
+                class="absolute right-4 top-1/2 block -translate-y-1/2 rounded-lg px-3 py-[6px] ring-primary focus:ring-2 lg:hidden"
+              >
+                <span
+                  class="relative my-[6px] block h-[2px] w-[30px] bg-white"
+                ></span>
+                <span
+                  class="relative my-[6px] block h-[2px] w-[30px] bg-white"
+                ></span>
+                <span
+                  class="relative my-[6px] block h-[2px] w-[30px] bg-white"
+                ></span>
+              </button>
+              <nav
+                id="navbarCollapse"
+                class="absolute right-4 top-full hidden w-full max-w-[250px] rounded-lg bg-white py-5 shadow-lg lg:static lg:block lg:w-full lg:max-w-full lg:bg-transparent lg:py-0 lg:px-4 lg:shadow-none xl:px-6"
+              >
+                <ul class="blcok lg:flex">
+                  <li class="group relative">
+                    <a
+                      href="index.html"
+                      class="ud-menu-scroll mx-8 flex py-2 text-base text-dark group-hover:text-secondary lg:mr-0 lg:inline-flex lg:py-6 lg:px-0 lg:text-white lg:group-hover:text-white lg:group-hover:opacity-70"
+                    >
+                      Home
+                    </a>
+                  </li>
+                  <li class="submenu-item group relative">
+                    <a href="index.html#servicios"
+                      class="relative mx-8 flex items-center justify-between py-2 font-medium text-base text-dark dark:text-white group-hover:text-secondary lg:mr-0 lg:ml-8 lg:inline-flex lg:py-6 lg:pl-0 lg:pr-4 lg:text-white lg:group-hover:text-white lg:group-hover:opacity-70 xl:ml-10">
+                      Servicios
+                      <svg class="fill-current ml-2" width="16" height="20" viewBox="0 0 16 20" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M7.99999 14.9C7.84999 14.9 7.72499 14.85 7.59999 14.75L1.84999 9.10005C1.62499 8.87505 1.62499 8.52505 1.84999 8.30005C2.07499 8.07505 2.42499 8.07505 2.64999 8.30005L7.99999 13.525L13.35 8.25005C13.575 8.02505 13.925 8.02505 14.15 8.25005C14.375 8.47505 14.375 8.82505 14.15 9.05005L8.39999 14.7C8.27499 14.825 8.14999 14.9 7.99999 14.9Z" />
+                      </svg>
+                    </a>
+                    <div
+                      class="submenu relative top-full left-0 hidden w-[250px] rounded-sm bg-white dark:bg-dark-2 p-4 transition-[top] duration-300 group-hover:opacity-100 lg:invisible lg:absolute lg:top-[110%] lg:block lg:opacity-0 lg:shadow-lg lg:group-hover:visible lg:group-hover:top-full">
+                      <a href="index.html#TyD"
+                        class="block rounded py-[10px] px-4 text-sm text-body-color dark:text-dark-6 hover:text-primary dark:hover:text-primary">
+                        Transformación y Digital
+                      </a>
+                      <a href="index.html#SAME"
+                        class="block rounded py-[10px] px-4 text-sm text-body-color dark:text-dark-6 hover:text-primary dark:hover:text-primary">
+                        Solicitud al Área de Mantenimiento Edificios
+                      </a>
+                      <a href="index.html#SAMTD"
+                        class="block rounded py-[10px] px-4 text-sm text-body-color dark:text-dark-6 hover:text-primary dark:hover:text-primary">
+                        Solicitudes Área MTD
+                      </a>
+                      <a href="index.html#SIF"
+                        class="block rounded py-[10px] px-4 text-sm text-body-color dark:text-dark-6 hover:text-primary dark:hover:text-primary">
+                        Solicitudes a Información Financiera
+                      </a>
+                      <a href="index.html#SACCC"
+                        class="block rounded py-[10px] px-4 text-sm text-body-color dark:text-dark-6 hover:text-primary dark:hover:text-primary">
+                        Solicitudes al área de Cuentas por Cobrar-CARTERA
+                      </a>
+                      <a href="index.html#SAA"
+                        class="block rounded py-[10px] px-4 text-sm text-body-color dark:text-dark-6 hover:text-primary dark:hover:text-primary">
+                        Solicitudes Área de Abastecimientos
+                      </a>
+                      <a href="index.html#SSIIGA"
+                        class="block rounded py-[10px] px-4 text-sm text-body-color dark:text-dark-6 hover:text-primary dark:hover:text-primary">
+                        Solicitudes a SIIGA
+                      </a>
+                      <a href="index.html#SAUD"
+                        class="block rounded py-[10px] px-4 text-sm text-body-color dark:text-dark-6 hover:text-primary dark:hover:text-primary">
+                        Solicitudes al Área de Universidad Deacero
+                      </a>
+                      <a href="index.html#LDNCE"
+                        class="block rounded py-[10px] px-4 text-sm text-body-color dark:text-dark-6 hover:text-primary dark:hover:text-primary">
+                        Línea Directa Normatividad Comercio Exterior
+                      </a>
+                    </div>
+                  </li>
+                  <li class="group relative">
+                    <a
+                      href="index.html#FAQ"
+                      class="ud-menu-scroll mx-8 flex py-2 text-base text-dark group-hover:text-secondary lg:mr-0 lg:inline-flex lg:py-6 lg:px-0 lg:text-white lg:group-hover:text-white lg:group-hover:opacity-70"
+                    >
+                      FAQ
+                    </a>
+                  </li>
+                  <li class="group relative">
+                    <a
+                      href="index.html#team"
+                      class="ud-menu-scroll mx-8 flex py-2 text-base text-dark group-hover:text-secondary lg:mr-0 lg:ml-7 lg:inline-flex lg:py-6 lg:px-0 lg:text-white lg:group-hover:text-white lg:group-hover:opacity-70 xl:ml-12"
+                    >
+                      Team
+                    </a>
+                  </li>
+                  <li class="group relative">
+                    <a
+                      href="index.html#contact"
+                      class="ud-menu-scroll mx-8 flex py-2 text-base text-dark group-hover:text-secondary lg:mr-0 lg:ml-7 lg:inline-flex lg:py-6 lg:px-0 lg:text-white lg:group-hover:text-white lg:group-hover:opacity-70 xl:ml-12"
+                    >
+                      Contacto
+                    </a>
+                  </li>
+                  <li class="submenu-item group relative">
+                    <a href="#"
+                      class="relative mx-8 flex items-center justify-between py-2 font-medium text-base text-dark dark:text-white group-hover:text-secondary lg:mr-0 lg:ml-8 lg:inline-flex lg:py-6 lg:pl-0 lg:pr-4 lg:text-white lg:group-hover:text-white lg:group-hover:opacity-70">
+                      
+                      Español 🇲🇽
+                      <svg class="fill-current ml-2" width="16" height="20" viewBox="0 0 16 20" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M7.99999 14.9C7.84999 14.9 7.72499 14.85 7.59999 14.75L1.84999 9.10005C1.62499 8.87505 1.62499 8.52505 1.84999 8.30005C2.07499 8.07505 2.42499 8.07505 2.64999 8.30005L7.99999 13.525L13.35 8.25005C13.575 8.02505 13.925 8.02505 14.15 8.25005C14.375 8.47505 14.375 8.82505 14.15 9.05005L8.39999 14.7C8.27499 14.825 8.14999 14.9 7.99999 14.9Z" />
+                      </svg>
+                    </a>
+                    <div
+                      class="submenu relative top-full left-0 hidden w-[250px] rounded-sm bg-white dark:bg-dark-2 p-4 transition-[top] duration-300 group-hover:opacity-100 lg:invisible lg:absolute lg:top-[110%] lg:block lg:opacity-0 lg:shadow-lg lg:group-hover:visible lg:group-hover:top-full">
+                      <a href="lang-en-guias-self-service.html"
+                        class="block rounded py-[10px] px-4 text-sm text-body-color dark:text-dark-6 hover:text-primary dark:hover:text-primary">
+                        English 🇺🇸
+                      </a>
+                    </div>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+            <div class="hidden justify-end pr-16 sm:flex lg:pr-0">
+              <a
+                href="javascript:void(0)"
+                onclick="signOut()"
+                class="signUpBtn text-sm rounded-lg bg-white bg-opacity-20 px-2 py-2 font-medium text-white duration-300 ease-in-out hover:bg-opacity-100 hover:text-dark"
+              >
+                Cerrar sesión
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ====== Navbar Section End -->
+    <!-- ====== Banner Section Start -->
+    <div
+      class="relative z-10 overflow-hidden bg-primary pt-[120px] pb-[100px] md:pt-[130px] lg:pt-[160px]"
+    >
+      <div class="container">
+        <div class="-mx-4 flex flex-wrap items-center">
+          <div class="w-full px-4">
+            <div class="text-center">
+              <h1 class="text-4xl font-semibold text-white">Guías Self Service </h1>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <span class="absolute top-0 left-0 z-[-1]">
+          <svg
+            width="495"
+            height="470"
+            viewBox="0 0 495 470"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <circle
+              cx="55"
+              cy="442"
+              r="138"
+              stroke="white"
+              stroke-opacity="0.04"
+              stroke-width="50"
+            />
+            <circle
+              cx="446"
+              r="39"
+              stroke="white"
+              stroke-opacity="0.04"
+              stroke-width="20"
+            />
+            <path
+              d="M245.406 137.609L233.985 94.9852L276.609 106.406L245.406 137.609Z"
+              stroke="white"
+              stroke-opacity="0.08"
+              stroke-width="12"
+            />
+          </svg>
+        </span>
+        <span class="absolute top-0 right-0 z-[-1]">
+          <svg
+            width="493"
+            height="470"
+            viewBox="0 0 493 470"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <circle
+              cx="462"
+              cy="5"
+              r="138"
+              stroke="white"
+              stroke-opacity="0.04"
+              stroke-width="50"
+            />
+            <circle
+              cx="49"
+              cy="470"
+              r="39"
+              stroke="white"
+              stroke-opacity="0.04"
+              stroke-width="20"
+            />
+            <path
+              d="M222.393 226.701L272.808 213.192L259.299 263.607L222.393 226.701Z"
+              stroke="white"
+              stroke-opacity="0.06"
+              stroke-width="13"
+            />
+          </svg>
+        </span>
+      </div>
+    </div>
+    <!-- ====== Banner Section End -->
+
+    <!-- ====== 404 Section Start -->
+    <section class="bg-white py-14 lg:py-20">
+      <div class="container mb-10">
+        <div class="-mx-4 flex flex-wrap">
+          <div class="w-full px-4">
+            <div class="-mx-4 flex flex-wrap">
+              <div class="w-full px-4">
+                <div
+                  class="single-faq wow fadeInUp mb-8 w-full relative mx-auto overflow-hidden rounded-lg bg-[#f3f4fe] py-20 px-8 text-center shadow-lg p-5 sm:p-8"
+                  data-wow-delay=".2s">
+                  <button class="faq-btn flex w-full items-center text-left">
+                    <div
+                      class="mr-5 flex h-10 w-full max-w-[40px] items-center justify-center rounded-lg bg-primary bg-opacity-5 text-secondary"
+                    >
+                      <svg
+                        width="17"
+                        height="10"
+                        viewBox="0 0 17 10"
+                        class="icon fill-current"
+                      >
+                        <path
+                          d="M7.28687 8.43257L7.28679 8.43265L7.29496 8.43985C7.62576 8.73124 8.02464 8.86001 8.41472 8.86001C8.83092 8.86001 9.22376 8.69083 9.53447 8.41713L9.53454 8.41721L9.54184 8.41052L15.7631 2.70784L15.7691 2.70231L15.7749 2.69659C16.0981 2.38028 16.1985 1.80579 15.7981 1.41393C15.4803 1.1028 14.9167 1.00854 14.5249 1.38489L8.41472 7.00806L2.29995 1.38063L2.29151 1.37286L2.28271 1.36548C1.93092 1.07036 1.38469 1.06804 1.03129 1.41393L1.01755 1.42738L1.00488 1.44184C0.69687 1.79355 0.695778 2.34549 1.0545 2.69659L1.05999 2.70196L1.06565 2.70717L7.28687 8.43257Z"
+                          fill="#3056D3"
+                          stroke="#3056D3"
+                        />
+                      </svg>
+                    </div>
+                    <div class="w-full">
+                      <h4 class="text-base font-semibold text-black sm:text-lg">
+                        Mesa de Servicio Todas Las Guías de Uso (Usuario)
+                      </h4>
+                    </div>
+                  </button>
+                  <div class="faq-content hidden pl-[62px]">
+                    <p class="py-3 text-base leading-relaxed text-body-color">
+                      <a class="hover:underline text-secondary" href="https://scribehow.com/page/Mesa_de_Servicio_Guias_de_Uso_Usuario__EJ24ljkEQdq1fHCrdTal-w">
+                          Abrir Guías en ScribeHow
+                      </a>
+                    </p>
+                    <iframe src="https://scribehow.com/page-embed/Mesa_de_Servicio_Guias_de_Uso_Usuario__EJ24ljkEQdq1fHCrdTal-w" width="100%" height="640" allowfullscreen frameborder="0"></iframe>
+                  </div>
+                </div>
+                
+              </div>
+            </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </section>
+    <!-- ====== 404 Section End -->
+
+    <!-- ====== Footer Section Start -->
+    <!-- ====== Footer Section End -->
+
+    <!-- ====== Back To Top Start -->
+    <a
+      href="javascript:void(0)"
+      class="back-to-top fixed bottom-8 right-8 left-auto z-[999] hidden h-10 w-10 items-center justify-center rounded-md bg-primary text-white shadow-md transition duration-300 ease-in-out hover:bg-dark"
+    >
+      <span
+        class="mt-[6px] h-3 w-3 rotate-45 border-t border-l border-white"
+      ></span>
+    </a>
+    <!-- ====== Back To Top End -->
+
+    <!-- ====== All Scripts -->
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>

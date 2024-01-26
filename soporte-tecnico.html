@@ -1,0 +1,715 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HelpCenter | Soporte Técnico</title>
+    <link
+      rel="shortcut icon"
+      href="assets/images/favicon.ico"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="assets/css/animate.css" />
+    <link rel="stylesheet" href="assets/css/tailwind.css" />
+    <!-- ==== SSO AZURE ==== -->
+    <script src="https://alcdn.msauth.net/browser/2.17.0/js/msal-browser.min.js"></script>
+    <script src="assets/js/sso-azure.js"></script>
+
+    <!-- ==== WOW JS ==== -->
+    <script src="assets/js/wow.min.js"></script>
+    <script>
+      new WOW().init();
+    </script>
+  </head>
+  <body>
+    <!-- ====== Navbar Section Start -->
+    <div
+      class="ud-header absolute top-0 left-0 z-40 flex w-full items-center bg-transparent"
+    >
+      <div class="container">
+        <div class="relative -mx-4 flex items-center justify-between">
+          <div class="w-60 max-w-full px-4">
+            <a href="index.html" class="navbar-logo block w-full py-5">
+              <img
+                src="assets/images/logo/logo-white.svg"
+                alt="logo"
+                class="header-logo w-full"
+              />
+            </a>
+          </div>
+          <div class="flex w-full items-center justify-between px-4">
+            <div>
+              <button
+                id="navbarToggler"
+                class="absolute right-4 top-1/2 block -translate-y-1/2 rounded-lg px-3 py-[6px] ring-primary focus:ring-2 lg:hidden"
+              >
+                <span
+                  class="relative my-[6px] block h-[2px] w-[30px] bg-white"
+                ></span>
+                <span
+                  class="relative my-[6px] block h-[2px] w-[30px] bg-white"
+                ></span>
+                <span
+                  class="relative my-[6px] block h-[2px] w-[30px] bg-white"
+                ></span>
+              </button>
+              <nav
+                id="navbarCollapse"
+                class="absolute right-4 top-full hidden w-full max-w-[250px] rounded-lg bg-white py-5 shadow-lg lg:static lg:block lg:w-full lg:max-w-full lg:bg-transparent lg:py-0 lg:px-4 lg:shadow-none xl:px-6"
+              >
+                <ul class="blcok lg:flex">
+                  <li class="group relative">
+                    <a
+                      href="index.html"
+                      class="ud-menu-scroll mx-8 flex py-2 text-base text-dark group-hover:text-secondary lg:mr-0 lg:inline-flex lg:py-6 lg:px-0 lg:text-white lg:group-hover:text-white lg:group-hover:opacity-70"
+                    >
+                      Home
+                    </a>
+                  </li>
+                  <li class="submenu-item group relative">
+                    <a href="index.html#servicios"
+                      class="relative mx-8 flex items-center justify-between py-2 font-medium text-base text-dark dark:text-white group-hover:text-secondary lg:mr-0 lg:ml-8 lg:inline-flex lg:py-6 lg:pl-0 lg:pr-4 lg:text-white lg:group-hover:text-white lg:group-hover:opacity-70 xl:ml-10">
+                      Servicios
+                      <svg class="fill-current ml-2" width="16" height="20" viewBox="0 0 16 20" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M7.99999 14.9C7.84999 14.9 7.72499 14.85 7.59999 14.75L1.84999 9.10005C1.62499 8.87505 1.62499 8.52505 1.84999 8.30005C2.07499 8.07505 2.42499 8.07505 2.64999 8.30005L7.99999 13.525L13.35 8.25005C13.575 8.02505 13.925 8.02505 14.15 8.25005C14.375 8.47505 14.375 8.82505 14.15 9.05005L8.39999 14.7C8.27499 14.825 8.14999 14.9 7.99999 14.9Z" />
+                      </svg>
+                    </a>
+                    <div
+                      class="submenu relative top-full left-0 hidden w-[250px] rounded-sm bg-white dark:bg-dark-2 p-4 transition-[top] duration-300 group-hover:opacity-100 lg:invisible lg:absolute lg:top-[110%] lg:block lg:opacity-0 lg:shadow-lg lg:group-hover:visible lg:group-hover:top-full">
+                      <a href="index.html#TyD"
+                        class="block rounded py-[10px] px-4 text-sm text-body-color dark:text-dark-6 hover:text-primary dark:hover:text-primary">
+                        Transformación y Digital
+                      </a>
+                      <a href="index.html#SAME"
+                        class="block rounded py-[10px] px-4 text-sm text-body-color dark:text-dark-6 hover:text-primary dark:hover:text-primary">
+                        Solicitud al Área de Mantenimiento Edificios
+                      </a>
+                      <a href="index.html#SAMTD"
+                        class="block rounded py-[10px] px-4 text-sm text-body-color dark:text-dark-6 hover:text-primary dark:hover:text-primary">
+                        Solicitudes Área MTD
+                      </a>
+                      <a href="index.html#SIF"
+                        class="block rounded py-[10px] px-4 text-sm text-body-color dark:text-dark-6 hover:text-primary dark:hover:text-primary">
+                        Solicitudes a Información Financiera
+                      </a>
+                      <a href="index.html#SACCC"
+                        class="block rounded py-[10px] px-4 text-sm text-body-color dark:text-dark-6 hover:text-primary dark:hover:text-primary">
+                        Solicitudes al área de Cuentas por Cobrar-CARTERA
+                      </a>
+                      <a href="index.html#SAA"
+                        class="block rounded py-[10px] px-4 text-sm text-body-color dark:text-dark-6 hover:text-primary dark:hover:text-primary">
+                        Solicitudes Área de Abastecimientos
+                      </a>
+                      <a href="index.html#SSIIGA"
+                        class="block rounded py-[10px] px-4 text-sm text-body-color dark:text-dark-6 hover:text-primary dark:hover:text-primary">
+                        Solicitudes a SIIGA
+                      </a>
+                      <a href="index.html#SAUD"
+                        class="block rounded py-[10px] px-4 text-sm text-body-color dark:text-dark-6 hover:text-primary dark:hover:text-primary">
+                        Solicitudes al Área de Universidad Deacero
+                      </a>
+                      <a href="index.html#LDNCE"
+                        class="block rounded py-[10px] px-4 text-sm text-body-color dark:text-dark-6 hover:text-primary dark:hover:text-primary">
+                        Línea Directa Normatividad Comercio Exterior
+                      </a>
+                    </div>
+                  </li>
+                  <li class="group relative">
+                    <a
+                      href="index.html#FAQ"
+                      class="ud-menu-scroll mx-8 flex py-2 text-base text-dark group-hover:text-secondary lg:mr-0 lg:inline-flex lg:py-6 lg:px-0 lg:text-white lg:group-hover:text-white lg:group-hover:opacity-70"
+                    >
+                      FAQ
+                    </a>
+                  </li>
+                  <li class="group relative">
+                    <a
+                      href="index.html#team"
+                      class="ud-menu-scroll mx-8 flex py-2 text-base text-dark group-hover:text-secondary lg:mr-0 lg:ml-7 lg:inline-flex lg:py-6 lg:px-0 lg:text-white lg:group-hover:text-white lg:group-hover:opacity-70 xl:ml-12"
+                    >
+                      Team
+                    </a>
+                  </li>
+                  <li class="group relative">
+                    <a
+                      href="index.html#contact"
+                      class="ud-menu-scroll mx-8 flex py-2 text-base text-dark group-hover:text-secondary lg:mr-0 lg:ml-7 lg:inline-flex lg:py-6 lg:px-0 lg:text-white lg:group-hover:text-white lg:group-hover:opacity-70 xl:ml-12"
+                    >
+                      Contacto
+                    </a>
+                  </li>
+                  <li class="submenu-item group relative">
+                    <a href="#"
+                      class="relative mx-8 flex items-center justify-between py-2 font-medium text-base text-dark dark:text-white group-hover:text-secondary lg:mr-0 lg:ml-8 lg:inline-flex lg:py-6 lg:pl-0 lg:pr-4 lg:text-white lg:group-hover:text-white lg:group-hover:opacity-70">
+                      
+                      Español 🇲🇽
+                      <svg class="fill-current ml-2" width="16" height="20" viewBox="0 0 16 20" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M7.99999 14.9C7.84999 14.9 7.72499 14.85 7.59999 14.75L1.84999 9.10005C1.62499 8.87505 1.62499 8.52505 1.84999 8.30005C2.07499 8.07505 2.42499 8.07505 2.64999 8.30005L7.99999 13.525L13.35 8.25005C13.575 8.02505 13.925 8.02505 14.15 8.25005C14.375 8.47505 14.375 8.82505 14.15 9.05005L8.39999 14.7C8.27499 14.825 8.14999 14.9 7.99999 14.9Z" />
+                      </svg>
+                    </a>
+                    <div
+                      class="submenu relative top-full left-0 hidden w-[250px] rounded-sm bg-white dark:bg-dark-2 p-4 transition-[top] duration-300 group-hover:opacity-100 lg:invisible lg:absolute lg:top-[110%] lg:block lg:opacity-0 lg:shadow-lg lg:group-hover:visible lg:group-hover:top-full">
+                      <a href="lang-en-soporte-tecnico.html"
+                        class="block rounded py-[10px] px-4 text-sm text-body-color dark:text-dark-6 hover:text-primary dark:hover:text-primary">
+                        English 🇺🇸
+                      </a>
+                    </div>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+            <div class="hidden justify-end pr-16 sm:flex lg:pr-0">
+              <a
+                href="javascript:void(0)"
+                onclick="signOut()"
+                class="signUpBtn text-sm rounded-lg bg-white bg-opacity-20 px-2 py-2 font-medium text-white duration-300 ease-in-out hover:bg-opacity-100 hover:text-dark"
+              >
+                Cerrar sesión
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ====== Navbar Section End -->
+
+    <!-- ====== Banner Section Start -->
+    <div
+      class="relative z-10 overflow-hidden bg-primary pt-[120px] pb-[100px] md:pt-[130px] lg:pt-[160px]"
+    >
+      <div class="container">
+        <div class="-mx-4 flex flex-wrap items-center">
+          <div class="w-full px-4">
+            <div class="text-center">
+              <h1 class="text-4xl font-semibold text-white">Soporte Técnico</h1>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <span class="absolute top-0 left-0 z-[-1]">
+          <svg
+            width="495"
+            height="470"
+            viewBox="0 0 495 470"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <circle
+              cx="55"
+              cy="442"
+              r="138"
+              stroke="white"
+              stroke-opacity="0.04"
+              stroke-width="50"
+            />
+            <circle
+              cx="446"
+              r="39"
+              stroke="white"
+              stroke-opacity="0.04"
+              stroke-width="20"
+            />
+            <path
+              d="M245.406 137.609L233.985 94.9852L276.609 106.406L245.406 137.609Z"
+              stroke="white"
+              stroke-opacity="0.08"
+              stroke-width="12"
+            />
+          </svg>
+        </span>
+        <span class="absolute top-0 right-0 z-[-1]">
+          <svg
+            width="493"
+            height="470"
+            viewBox="0 0 493 470"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <circle
+              cx="462"
+              cy="5"
+              r="138"
+              stroke="white"
+              stroke-opacity="0.04"
+              stroke-width="50"
+            />
+            <circle
+              cx="49"
+              cy="470"
+              r="39"
+              stroke="white"
+              stroke-opacity="0.04"
+              stroke-width="20"
+            />
+            <path
+              d="M222.393 226.701L272.808 213.192L259.299 263.607L222.393 226.701Z"
+              stroke="white"
+              stroke-opacity="0.06"
+              stroke-width="13"
+            />
+          </svg>
+        </span>
+      </div>
+    </div>
+    <!-- ====== Banner Section End -->
+
+    <!-- ====== Blog Details Section Start -->
+    <section class="pt-20 pb-10 lg:pt-[100px] lg:pb-20">
+      <div class="container">
+        <div class="-mx-4 flex flex-wrap justify-center">
+          <div class="w-full px-4">
+            <div class="-mx-4 flex flex-wrap">
+              <div class="w-full px-4 lg:w-8/12">
+                <div>
+                  <h2
+                    class="wow fadeInUp mb-1 text-lg font-bold leading-snug text-dark sm:text-lg sm:leading-snug md:text-lg md:leading-snug"
+                    data-wow-delay=".1s
+                    "
+                  >
+                    Alcance del Servicio - Atención a incidentes y apoyo con solicitudes relacionadas con:
+                  </h2>
+                  <li class="wow fadeInUp mb-2 text-base leading-relaxed text-body-color"
+                  data-wow-delay=".1s">Instalación de Software de Oficina y Sistema Operativo de computadoras.</li>
+                  <li class="wow fadeInUp mb-2 text-base leading-relaxed text-body-color"
+                  data-wow-delay=".1s">Cambio y/o renovación de equipo de computo.</li>
+                  <li class="wow fadeInUp mb-2 text-base leading-relaxed text-body-color"
+                  data-wow-delay=".1s">Problemas con Salas de junta, servicio de correo, conexión a red, VPN, telefonía e impresoras.</li>
+
+                  <h2
+                  class="mt-12 wow fadeInUp mb-1 text-xl font-bold leading-snug text-dark sm:text-xl sm:leading-snug md:text-xl md:leading-snug"
+                  data-wow-delay=".1s
+                  "
+                >
+                  Apoyo y soporte técnico especializado en:
+                </h2>
+
+                                  
+                  <li class="wow fadeInUp mb-2 text-sm leading-relaxed text-body-color transition duration-300 ease-in-out hover:text-secondary" 
+                  data-wow-delay=".1s"> 
+                    <a href="https://deacero.atlassian.net/servicedesk/customer/portal/20/group/117/create/363">Correo - Agregar a grupo de correo </a> 
+                  </li> 
+                  
+
+                  <li class="wow fadeInUp mb-2 text-sm leading-relaxed text-body-color transition duration-300 ease-in-out hover:text-secondary" 
+                  data-wow-delay=".1s"> 
+                    <a href="https://deacero.atlassian.net/servicedesk/customer/portal/20/group/117/create/363">Correo - Creación de respaldo de correo </a> 
+                  </li> 
+                  
+
+                  <li class="wow fadeInUp mb-2 text-sm leading-relaxed text-body-color transition duration-300 ease-in-out hover:text-secondary" 
+                  data-wow-delay=".1s"> 
+                    <a href="https://deacero.atlassian.net/servicedesk/customer/portal/20/group/117/create/363">Correo - Quitar usuarios del grupo </a> 
+                  </li> 
+                  
+
+                  <li class="wow fadeInUp mb-2 text-sm leading-relaxed text-body-color transition duration-300 ease-in-out hover:text-secondary" 
+                  data-wow-delay=".1s"> 
+                    <a href="https://deacero.atlassian.net/servicedesk/customer/portal/20/group/117/create/363">Correo - Configuración de correo </a> 
+                  </li> 
+                  
+
+                  <li class="wow fadeInUp mb-2 text-sm leading-relaxed text-body-color transition duration-300 ease-in-out hover:text-secondary" 
+                  data-wow-delay=".1s"> 
+                    <a href="https://deacero.atlassian.net/servicedesk/customer/portal/20/group/117/create/363">Correo - Cambio de contraseña de usuario </a> 
+                  </li> 
+                  
+
+                  <li class="wow fadeInUp mb-2 text-sm leading-relaxed text-body-color transition duration-300 ease-in-out hover:text-secondary" 
+                  data-wow-delay=".1s"> 
+                    <a href="https://deacero.atlassian.net/servicedesk/customer/portal/20/group/117/create/363">Correo - Creación de un nuevo perfil de usuario </a> 
+                  </li> 
+                  
+
+                  <li class="wow fadeInUp mb-2 text-sm leading-relaxed text-body-color transition duration-300 ease-in-out hover:text-secondary" 
+                  data-wow-delay=".1s"> 
+                    <a href="https://deacero.atlassian.net/servicedesk/customer/portal/20/group/117/create/363">Correo - Creación de grupo o lista de distribución </a> 
+                  </li> 
+                  
+
+                  <li class="wow fadeInUp mb-2 text-sm leading-relaxed text-body-color transition duration-300 ease-in-out hover:text-secondary" 
+                  data-wow-delay=".1s"> 
+                    <a href="https://deacero.atlassian.net/servicedesk/customer/portal/20/group/117/create/363">Correo - Correo de Sistema </a> 
+                  </li> 
+                  
+
+                  <li class="wow fadeInUp mb-2 text-sm leading-relaxed text-body-color transition duration-300 ease-in-out hover:text-secondary" 
+                  data-wow-delay=".1s"> 
+                    <a href="https://deacero.atlassian.net/servicedesk/customer/portal/20/group/117/create/363">Correo - Cambio de información de usuario de AD </a> 
+                  </li> 
+                  
+
+                  <li class="wow fadeInUp mb-2 text-sm leading-relaxed text-body-color transition duration-300 ease-in-out hover:text-secondary" 
+                  data-wow-delay=".1s"> 
+                    <a href="https://deacero.atlassian.net/servicedesk/customer/portal/20/group/117/create/373">Impresoras - Cambio de toner </a> 
+                  </li> 
+                  
+
+                  <li class="wow fadeInUp mb-2 text-sm leading-relaxed text-body-color transition duration-300 ease-in-out hover:text-secondary" 
+                  data-wow-delay=".1s"> 
+                    <a href="https://deacero.atlassian.net/servicedesk/customer/portal/20/group/117/create/373">Impresoras - Vaciado de toner residual </a> 
+                  </li> 
+                  
+
+                  <li class="wow fadeInUp mb-2 text-sm leading-relaxed text-body-color transition duration-300 ease-in-out hover:text-secondary" 
+                  data-wow-delay=".1s"> 
+                    <a href="https://deacero.atlassian.net/servicedesk/customer/portal/20/group/117/create/373">Impresoras - Configurar impresora </a> 
+                  </li> 
+                  
+
+                  <li class="wow fadeInUp mb-2 text-sm leading-relaxed text-body-color transition duration-300 ease-in-out hover:text-secondary" 
+                  data-wow-delay=".1s"> 
+                    <a href="https://deacero.atlassian.net/servicedesk/customer/portal/20/group/117/create/373">Impresoras - Configurar Zebra </a> 
+                  </li> 
+                  
+
+                  <li class="wow fadeInUp mb-2 text-sm leading-relaxed text-body-color transition duration-300 ease-in-out hover:text-secondary" 
+                  data-wow-delay=".1s"> 
+                    <a href="https://deacero.atlassian.net/servicedesk/customer/portal/20/group/117/create/368">Redes - Deshabilitar IPv6 </a> 
+                  </li> 
+                  
+
+                  <li class="wow fadeInUp mb-2 text-sm leading-relaxed text-body-color transition duration-300 ease-in-out hover:text-secondary" 
+                  data-wow-delay=".1s"> 
+                    <a href="https://deacero.atlassian.net/servicedesk/customer/portal/20/group/117/create/368">Redes - Permisos de navegación </a> 
+                  </li> 
+                  
+
+                  <li class="wow fadeInUp mb-2 text-sm leading-relaxed text-body-color transition duration-300 ease-in-out hover:text-secondary" 
+                  data-wow-delay=".1s"> 
+                    <a href="https://deacero.atlassian.net/servicedesk/customer/portal/20/group/117/create/368">Redes - Reendominar equipo </a> 
+                  </li> 
+                  
+
+                  <li class="wow fadeInUp mb-2 text-sm leading-relaxed text-body-color transition duration-300 ease-in-out hover:text-secondary" 
+                  data-wow-delay=".1s"> 
+                    <a href="https://deacero.atlassian.net/servicedesk/customer/portal/20/group/117/create/368">Redes - Permiso a carpeta </a> 
+                  </li> 
+                  
+
+                  <li class="wow fadeInUp mb-2 text-sm leading-relaxed text-body-color transition duration-300 ease-in-out hover:text-secondary" 
+                  data-wow-delay=".1s"> 
+                    <a href="https://deacero.atlassian.net/servicedesk/customer/portal/20/group/117/create/369">VPN - Permisos de VPN </a> 
+                  </li> 
+                  
+
+                  <li class="wow fadeInUp mb-2 text-sm leading-relaxed text-body-color transition duration-300 ease-in-out hover:text-secondary" 
+                  data-wow-delay=".1s"> 
+                    <a href="https://deacero.atlassian.net/servicedesk/customer/portal/20/group/117/create/369">VPN - Extensión de Permisos de VPN </a> 
+                  </li> 
+                  
+
+                  <li class="wow fadeInUp mb-2 text-sm leading-relaxed text-body-color transition duration-300 ease-in-out hover:text-secondary" 
+                  data-wow-delay=".1s"> 
+                    <a href="https://deacero.atlassian.net/servicedesk/customer/portal/20/group/117/create/369">VPN - Instalación del cliente VPN </a> 
+                  </li> 
+                  
+
+                  <li class="wow fadeInUp mb-2 text-sm leading-relaxed text-body-color transition duration-300 ease-in-out hover:text-secondary" 
+                  data-wow-delay=".1s"> 
+                    <a href="https://deacero.atlassian.net/servicedesk/customer/portal/20/group/117/create/369">VPN - Habilitación de cuenta VPN </a> 
+                  </li> 
+                  
+
+                  <li class="wow fadeInUp mb-2 text-sm leading-relaxed text-body-color transition duration-300 ease-in-out hover:text-secondary" 
+                  data-wow-delay=".1s"> 
+                    <a href="https://deacero.atlassian.net/servicedesk/customer/portal/20/group/117/create/370">Asignaciones de Equipo - Solicitud de Equipo nuevo ingreso </a> 
+                  </li> 
+                  
+
+                  <li class="wow fadeInUp mb-2 text-sm leading-relaxed text-body-color transition duration-300 ease-in-out hover:text-secondary" 
+                  data-wow-delay=".1s"> 
+                    <a href="https://deacero.atlassian.net/servicedesk/customer/portal/20/group/117/create/370">Asignaciones de Equipo - Solicitud de cambio de equipo </a> 
+                  </li> 
+                  
+
+                  <li class="wow fadeInUp mb-2 text-sm leading-relaxed text-body-color transition duration-300 ease-in-out hover:text-secondary" 
+                  data-wow-delay=".1s"> 
+                    <a href="https://deacero.atlassian.net/servicedesk/customer/portal/20/group/117/create/364">Equipo de cómputo - Actualización de drivers </a> 
+                  </li> 
+                  
+
+                  <li class="wow fadeInUp mb-2 text-sm leading-relaxed text-body-color transition duration-300 ease-in-out hover:text-secondary" 
+                  data-wow-delay=".1s"> 
+                    <a href="https://deacero.atlassian.net/servicedesk/customer/portal/20/group/117/create/364">Equipo de cómputo - Cambio de batería </a> 
+                  </li> 
+                  
+
+                  <li class="wow fadeInUp mb-2 text-sm leading-relaxed text-body-color transition duration-300 ease-in-out hover:text-secondary" 
+                  data-wow-delay=".1s"> 
+                    <a href="https://deacero.atlassian.net/servicedesk/customer/portal/20/group/117/create/364">Equipo de cómputo - Cambio de pantalla </a> 
+                  </li> 
+                  
+
+                  <li class="wow fadeInUp mb-2 text-sm leading-relaxed text-body-color transition duration-300 ease-in-out hover:text-secondary" 
+                  data-wow-delay=".1s"> 
+                    <a href="https://deacero.atlassian.net/servicedesk/customer/portal/20/group/117/create/364">Equipo de cómputo - Cambio de RAM </a> 
+                  </li> 
+                  
+
+                  <li class="wow fadeInUp mb-2 text-sm leading-relaxed text-body-color transition duration-300 ease-in-out hover:text-secondary" 
+                  data-wow-delay=".1s"> 
+                    <a href="https://deacero.atlassian.net/servicedesk/customer/portal/20/group/117/create/364">Equipo de cómputo - Cambio de tarjeta de red </a> 
+                  </li> 
+                  
+
+                  <li class="wow fadeInUp mb-2 text-sm leading-relaxed text-body-color transition duration-300 ease-in-out hover:text-secondary" 
+                  data-wow-delay=".1s"> 
+                    <a href="https://deacero.atlassian.net/servicedesk/customer/portal/20/group/117/create/364">Equipo de cómputo - Cambio de mouse </a> 
+                  </li> 
+                  
+
+                  <li class="wow fadeInUp mb-2 text-sm leading-relaxed text-body-color transition duration-300 ease-in-out hover:text-secondary" 
+                  data-wow-delay=".1s"> 
+                    <a href="https://deacero.atlassian.net/servicedesk/customer/portal/20/group/117/create/364">Equipo de cómputo - Cambio de teclado </a> 
+                  </li> 
+                  
+
+                  <li class="wow fadeInUp mb-2 text-sm leading-relaxed text-body-color transition duration-300 ease-in-out hover:text-secondary" 
+                  data-wow-delay=".1s"> 
+                    <a href="https://deacero.atlassian.net/servicedesk/customer/portal/20/group/117/create/364">Equipo de cómputo - Cambio de HDD a SDD </a> 
+                  </li> 
+                  
+
+                  <li class="wow fadeInUp mb-2 text-sm leading-relaxed text-body-color transition duration-300 ease-in-out hover:text-secondary" 
+                  data-wow-delay=".1s"> 
+                    <a href="https://deacero.atlassian.net/servicedesk/customer/portal/20/group/117/create/364">Equipo de cómputo - Formateo de equipo </a> 
+                  </li> 
+                  
+
+                  <li class="wow fadeInUp mb-2 text-sm leading-relaxed text-body-color transition duration-300 ease-in-out hover:text-secondary" 
+                  data-wow-delay=".1s"> 
+                    <a href="https://deacero.atlassian.net/servicedesk/customer/portal/20/group/117/create/364">Equipo de cómputo - Recuperación de equipo </a> 
+                  </li> 
+                  
+
+                  <li class="wow fadeInUp mb-2 text-sm leading-relaxed text-body-color transition duration-300 ease-in-out hover:text-secondary" 
+                  data-wow-delay=".1s"> 
+                    <a href="https://deacero.atlassian.net/servicedesk/customer/portal/20/group/117/create/365">Salas de Juntas y Videoconferencia - Acceso a Red de Invitados </a> 
+                  </li> 
+                  
+
+                  <li class="wow fadeInUp mb-2 text-sm leading-relaxed text-body-color transition duration-300 ease-in-out hover:text-secondary" 
+                  data-wow-delay=".1s"> 
+                    <a href="https://deacero.atlassian.net/servicedesk/customer/portal/20/group/117/create/365">Salas de Juntas y Videoconferencia - Apoyo para preparar sala antes de una conferencia </a> 
+                  </li> 
+                  
+
+                  <li class="wow fadeInUp mb-2 text-sm leading-relaxed text-body-color transition duration-300 ease-in-out hover:text-secondary" 
+                  data-wow-delay=".1s"> 
+                    <a href="https://deacero.atlassian.net/servicedesk/customer/portal/20/group/117/create/365">Salas de Juntas y Videoconferencia - Configuración equipo de videoconferencia </a> 
+                  </li> 
+                  
+
+                  <li class="wow fadeInUp mb-2 text-sm leading-relaxed text-body-color transition duration-300 ease-in-out hover:text-secondary" 
+                  data-wow-delay=".1s"> 
+                    <a href="https://deacero.atlassian.net/servicedesk/customer/portal/20/group/117/create/365">Salas de Juntas y Videoconferencia - Asesoría con videoconferencia Zoom/Teams </a> 
+                  </li> 
+                  
+
+                  <li class="wow fadeInUp mb-2 text-sm leading-relaxed text-body-color transition duration-300 ease-in-out hover:text-secondary" 
+                  data-wow-delay=".1s"> 
+                    <a href="https://deacero.atlassian.net/servicedesk/customer/portal/20/group/117/create/365">Salas de Juntas y Videoconferencia - Instalación/actualización zoom </a> 
+                  </li> 
+                  
+
+                  <li class="wow fadeInUp mb-2 text-sm leading-relaxed text-body-color transition duration-300 ease-in-out hover:text-secondary" 
+                  data-wow-delay=".1s"> 
+                    <a href="https://deacero.atlassian.net/servicedesk/customer/portal/20/group/117/create/366">Software (Office 365, Windows) - Solicitudes de Windows </a> 
+                  </li> 
+                  
+
+                  <li class="wow fadeInUp mb-2 text-sm leading-relaxed text-body-color transition duration-300 ease-in-out hover:text-secondary" 
+                  data-wow-delay=".1s"> 
+                    <a href="https://deacero.atlassian.net/servicedesk/customer/portal/20/group/117/create/366">Software (Office 365, Windows) - Solicitudes de Microsoft Office 365 </a> 
+                  </li> 
+                  
+
+                  <li class="wow fadeInUp mb-2 text-sm leading-relaxed text-body-color transition duration-300 ease-in-out hover:text-secondary" 
+                  data-wow-delay=".1s"> 
+                    <a href="https://deacero.atlassian.net/servicedesk/customer/portal/20/group/117/create/366">Software (Office 365, Windows) - Solicitudes de Software General </a> 
+                  </li> 
+                  
+
+                  <li class="wow fadeInUp mb-2 text-sm leading-relaxed text-body-color transition duration-300 ease-in-out hover:text-secondary" 
+                  data-wow-delay=".1s"> 
+                    <a href="https://deacero.atlassian.net/servicedesk/customer/portal/20/group/117/create/366">Software (Office 365, Windows) - Solicitudes de Zoom </a> 
+                  </li> 
+                  
+
+                  <li class="wow fadeInUp mb-2 text-sm leading-relaxed text-body-color transition duration-300 ease-in-out hover:text-secondary" 
+                  data-wow-delay=".1s"> 
+                    <a href="https://deacero.atlassian.net/servicedesk/customer/portal/20/group/117/create/366">Software (Office 365, Windows) - Instalación/actualización de software en general </a> 
+                  </li> 
+                  
+
+                  <li class="wow fadeInUp mb-2 text-sm leading-relaxed text-body-color transition duration-300 ease-in-out hover:text-secondary" 
+                  data-wow-delay=".1s"> 
+                    <a href="https://deacero.atlassian.net/servicedesk/customer/portal/20/group/117/create/366">Software (Office 365, Windows) - Instalación/actualización de office </a> 
+                  </li> 
+                  
+
+                  <li class="wow fadeInUp mb-2 text-sm leading-relaxed text-body-color transition duration-300 ease-in-out hover:text-secondary" 
+                  data-wow-delay=".1s"> 
+                    <a href="https://deacero.atlassian.net/servicedesk/customer/portal/20/group/117/create/366">Software (Office 365, Windows) - Instalación/actualización de windows </a> 
+                  </li> 
+                  
+
+                  <li class="wow fadeInUp mb-2 text-sm leading-relaxed text-body-color transition duration-300 ease-in-out hover:text-secondary" 
+                  data-wow-delay=".1s"> 
+                    <a href="https://deacero.atlassian.net/servicedesk/customer/portal/20/group/117/create/367">Tabletas - Apoyo en tabletas </a> 
+                  </li> 
+                  
+
+                  <li class="wow fadeInUp mb-2 text-sm leading-relaxed text-body-color transition duration-300 ease-in-out hover:text-secondary" 
+                  data-wow-delay=".1s"> 
+                    <a href="https://deacero.atlassian.net/servicedesk/customer/portal/20/group/117/create/367">Tabletas - Actualización de tableta </a> 
+                  </li> 
+                  
+
+                  <li class="wow fadeInUp mb-2 text-sm leading-relaxed text-body-color transition duration-300 ease-in-out hover:text-secondary" 
+                  data-wow-delay=".1s"> 
+                    <a href="https://deacero.atlassian.net/servicedesk/customer/portal/20/group/117/create/367">Tabletas - Formateo de tableta </a> 
+                  </li> 
+                  
+
+                  <li class="wow fadeInUp mb-2 text-sm leading-relaxed text-body-color transition duration-300 ease-in-out hover:text-secondary" 
+                  data-wow-delay=".1s"> 
+                    <a href="https://deacero.atlassian.net/servicedesk/customer/portal/20/group/117/create/372">Telefonía - Cambio de extensión </a> 
+                  </li> 
+                  
+
+                  <li class="wow fadeInUp mb-2 text-sm leading-relaxed text-body-color transition duration-300 ease-in-out hover:text-secondary" 
+                  data-wow-delay=".1s"> 
+                    <a href="https://deacero.atlassian.net/servicedesk/customer/portal/20/group/117/create/372">Telefonía - Instalación de Avaya/Softphone </a> 
+                  </li> 
+                  
+
+                  <li class="wow fadeInUp mb-2 text-sm leading-relaxed text-body-color transition duration-300 ease-in-out hover:text-secondary" 
+                  data-wow-delay=".1s"> 
+                    <a href="https://deacero.atlassian.net/servicedesk/customer/portal/20/group/117/create/372">Telefonía - Configuración/movimiento teléfono físico </a> 
+                  </li> 
+                  
+
+                  <li class="wow fadeInUp mb-2 text-sm leading-relaxed text-body-color transition duration-300 ease-in-out hover:text-secondary" 
+                  data-wow-delay=".1s"> 
+                    <a href="https://deacero.atlassian.net/servicedesk/customer/portal/20/group/117/create/372">Telefonía - Contraseña Avaya/Softphone </a> 
+                  </li> 
+                  
+
+                  <li class="wow fadeInUp mb-2 text-sm leading-relaxed text-body-color transition duration-300 ease-in-out hover:text-secondary" 
+                  data-wow-delay=".1s"> 
+                    <a href="https://deacero.atlassian.net/servicedesk/customer/portal/20/group/117/create/385">Eventos - Apoyo en evento presencial </a> 
+                  </li> 
+                  
+
+                  <li class="wow fadeInUp mb-2 text-sm leading-relaxed text-body-color transition duration-300 ease-in-out hover:text-secondary" 
+                  data-wow-delay=".1s"> 
+                    <a href="https://deacero.atlassian.net/servicedesk/customer/portal/20/group/117/create/385">Eventos - Apoyo en evento remoto </a> 
+                  </li> 
+                  
+
+                  <li class="wow fadeInUp mb-2 text-sm leading-relaxed text-body-color transition duration-300 ease-in-out hover:text-secondary" 
+                  data-wow-delay=".1s"> 
+                    <a href="https://deacero.atlassian.net/servicedesk/customer/portal/20/group/117/create/385">Eventos - Instalación de equipo de cómputo, audio, video, red para eventos</a> 
+                  </li> 
+                  
+
+
+                
+                </div>
+              </div>
+
+              <div class="w-full px-4 lg:w-4/12">
+                <div>
+                  <div
+                    class="wow fadeInUp relative mb-12 overflow-hidden rounded bg-primary py-[60px] px-11 text-center lg:px-8"
+                    data-wow-delay=".1s">
+                    <h3 class="mb-6 text-2xl font-semibold text-white">
+                      Service Owner
+                    </h3>
+                    <div class="wow fadeInUp" data-wow-delay=".25s">
+                      <div
+                        class="h-[70px] relative z-10 mx-auto mb-6 w-[70px] rounded-full text-center mt-12"
+                      >
+                        <img
+                          src="assets/images/serviceOwners/JSC.png"
+                          alt="image"
+                          class="w-full rounded-full"
+                        />
+                        </div>
+                        <div class="text-center">
+                          <h4 class="mb-2 text-base font-medium text-white">
+                            JOSE SAUCEDA CASTILLO
+                          </h4>
+                          <p class="mb-5 text-xs font-medium text-white">
+                            INGENIERO DE SOPORTE INTERMEDIO
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  <div class="-mx-4 mb-8 flex flex-wrap">
+                    <div class="w-full px-4">
+                      <h2
+                        class="wow fadeInUp relative pb-5 text-2xl font-semibold text-dark sm:text-[28px]"
+                        data-wow-delay=".1s
+                        "
+                      >
+                        Clasificación del Servicio
+                      </h2>
+                      <span class="mb-10 inline-block h-[2px] w-20 bg-primary"></span>
+                      <li class="wow fadeInUp mb-2 text-base leading-relaxed text-body-color"
+                      data-wow-delay=".1s">Servicio Bronze</li>
+                      <li class="wow fadeInUp mb-2 text-base leading-relaxed text-body-color"
+                      data-wow-delay=".1s">Atención a incidentes</li>
+                      <ul>
+                          <li class="wow fadeInUp mb-2 text-sm leading-relaxed text-body-color"
+                          data-wow-delay=".1s">Prioridad Crítico: 1 Hrs</li>
+                          <li class="wow fadeInUp mb-2 text-sm leading-relaxed text-body-color"
+                          data-wow-delay=".1s">Prioridad Alta: 4 Hrs</li>
+                          <li class="wow fadeInUp mb-2 text-sm leading-relaxed text-body-color"
+                          data-wow-delay=".1s">Prioridad Media: 6 Hrs</li>
+                          <li class="wow fadeInUp mb-2 text-sm leading-relaxed text-body-color"
+                          data-wow-delay=".1s">Prioridad Baja: 8 Hrs</li>
+                      </ul>
+                      <li class="wow fadeInUp mb-2 text-base leading-relaxed text-body-color"
+                      data-wow-delay=".1s">Atención a requerimientos o servicios</li>
+                      <ul>
+                        <li class="wow fadeInUp mb-2 text-sm leading-relaxed text-body-color"
+                        data-wow-delay=".1s">Prioridad Crítico: 4 Hrs</li>
+                        <li class="wow fadeInUp mb-2 text-sm leading-relaxed text-body-color"
+                        data-wow-delay=".1s">Prioridad Alta: 10 Hrs</li>
+                        <li class="wow fadeInUp mb-2 text-sm leading-relaxed text-body-color"
+                        data-wow-delay=".1s">Prioridad Media: 24 Hrs</li>
+                        <li class="wow fadeInUp mb-2 text-sm leading-relaxed text-body-color"
+                        data-wow-delay=".1s">Prioridad Baja: 40 Hrs</li>
+                    </ul>
+                    </div>
+
+                    
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+    <!-- ====== Back To Top Start -->
+    <a
+      href="javascript:void(0)"
+      class="back-to-top fixed bottom-8 right-8 left-auto z-[999] hidden h-10 w-10 items-center justify-center rounded-md bg-primary text-white shadow-md transition duration-300 ease-in-out hover:bg-dark"
+    >
+      <span
+        class="mt-[6px] h-3 w-3 rotate-45 border-t border-l border-white"
+      ></span>
+    </a>
+    <!-- ====== Back To Top End -->
+
+    <!-- ====== All Scripts -->
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>

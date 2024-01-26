@@ -4,7 +4,9 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Deacero | HelpCenter</title>
+    <title>
+      Deacero | HelpCenter
+    </title>
     <link
       rel="shortcut icon"
       href="assets/images/favicon.ico"
@@ -12,8 +14,8 @@
     />
     <link rel="stylesheet" href="assets/css/animate.css" />
     <link rel="stylesheet" href="assets/css/tailwind.css" />
-    <link rel="stylesheet" href="assets/css/popup.css" />
-        <!-- ==== SSO AZURE ==== -->
+
+    <!-- ==== SSO AZURE ==== -->
     <script src="https://alcdn.msauth.net/browser/2.17.0/js/msal-browser.min.js"></script>
     <script src="assets/js/sso-azure.js"></script>
     
@@ -25,31 +27,13 @@
   </head>
   <body>
     <!-- ====== Navbar Section Start -->
-    <div class="popup-container">
-      <div class="popup">
-          <div class="popup-title">¡Bienvenido a Help Center DEACERO!</div>
-          <div>
-            Por favor, indica la dirección a la que perteneces.
-          </div>
-          <a href="vista-usuario-tyd.html">
-            <div class="popup-button">
-              <span class="popuptext" id="myPopup"> Dirección de Transformación y Digital</span>
-            </div>
-          </a>
-          <a href="vista-usuario-no-tyd.html">
-            <div class="popup-button">
-              <span class="popuptext" id="myPopup">Otra dirección</span>
-            </div>
-          </a>
-      </div>
-    </div>
     <div
       class="ud-header absolute top-0 left-0 z-40 flex w-full items-center bg-transparent"
     >
       <div class="container">
         <div class="relative -mx-4 flex items-center justify-between">
           <div class="w-60 max-w-full px-4">
-            <a "index.html" class="navbar-logo block w-full py-5">
+            <a href="vista-usuario-tyd.html" class="navbar-logo block w-full py-5">
               <img
                 src="assets/images/logo/logo-white.svg"
                 alt="logo"
@@ -72,7 +56,6 @@
                 <span
                   class="relative my-[6px] block h-[2px] w-[30px] bg-white"
                 ></span>
-
               </button>
               <nav
                 id="navbarCollapse"
@@ -81,14 +64,14 @@
                 <ul class="blcok lg:flex">
                   <li class="group relative">
                     <a
-                      "#home"
+                      href="#home"
                       class="ud-menu-scroll mx-8 flex py-2 text-base text-dark group-hover:text-secondary lg:mr-0 lg:inline-flex lg:py-6 lg:px-0 lg:text-white lg:group-hover:text-white lg:group-hover:opacity-70"
                     >
                       Home
                     </a>
                   </li>
                   <li class="submenu-item group relative">
-                    <a "#servicios"
+                    <a href="#servicios"
                       class="relative mx-8 flex items-center justify-between py-2 font-medium text-base text-dark dark:text-white group-hover:text-secondary lg:mr-0 lg:ml-8 lg:inline-flex lg:py-6 lg:pl-0 lg:pr-4 lg:text-white lg:group-hover:text-white lg:group-hover:opacity-70 xl:ml-10">
                       Servicios
                       <svg class="fill-current ml-2" width="16" height="20" viewBox="0 0 16 20" fill="none"
@@ -99,39 +82,39 @@
                     </a>
                     <div
                       class="submenu relative top-full left-0 hidden w-[250px] rounded-sm bg-white dark:bg-dark-2 p-4 transition-[top] duration-300 group-hover:opacity-100 lg:invisible lg:absolute lg:top-[110%] lg:block lg:opacity-0 lg:shadow-lg lg:group-hover:visible lg:group-hover:top-full">
-                      <a "#TyD"
+                      <a href="#TyD"
                         class="block rounded py-[10px] px-4 text-sm text-body-color dark:text-dark-6 hover:text-primary dark:hover:text-primary">
                         Transformación y Digital
                       </a>
-                      <a "#SAME"
+                      <a href="#SAME"
                         class="block rounded py-[10px] px-4 text-sm text-body-color dark:text-dark-6 hover:text-primary dark:hover:text-primary">
                         Solicitud al Área de Mantenimiento Edificios
                       </a>
-                      <a "#SAMTD"
+                      <a href="#SAMTD"
                         class="block rounded py-[10px] px-4 text-sm text-body-color dark:text-dark-6 hover:text-primary dark:hover:text-primary">
                         Solicitudes Área MTD
                       </a>
-                      <a "#SIF"
+                      <a href="#SIF"
                         class="block rounded py-[10px] px-4 text-sm text-body-color dark:text-dark-6 hover:text-primary dark:hover:text-primary">
                         Solicitudes a Información Financiera
                       </a>
-                      <a "#SACCC"
+                      <a href="#SACCC"
                         class="block rounded py-[10px] px-4 text-sm text-body-color dark:text-dark-6 hover:text-primary dark:hover:text-primary">
                         Solicitudes al área de Cuentas por Cobrar-CARTERA
                       </a>
-                      <a "#SAA"
+                      <a href="#SAA"
                         class="block rounded py-[10px] px-4 text-sm text-body-color dark:text-dark-6 hover:text-primary dark:hover:text-primary">
                         Solicitudes Área de Abastecimientos
                       </a>
-                      <a "#SSIIGA"
+                      <a href="#SSIIGA"
                         class="block rounded py-[10px] px-4 text-sm text-body-color dark:text-dark-6 hover:text-primary dark:hover:text-primary">
                         Solicitudes a SIIGA
                       </a>
-                      <a "#SAUD"
+                      <a href="#SAUD"
                         class="block rounded py-[10px] px-4 text-sm text-body-color dark:text-dark-6 hover:text-primary dark:hover:text-primary">
                         Solicitudes al Área de Universidad Deacero
                       </a>
-                      <a "#LDNCE"
+                      <a href="#LDNCE"
                         class="block rounded py-[10px] px-4 text-sm text-body-color dark:text-dark-6 hover:text-primary dark:hover:text-primary">
                         Línea Directa Normatividad Comercio Exterior
                       </a>
@@ -139,7 +122,7 @@
                   </li>
                   <li class="group relative">
                     <a
-                      "#FAQ"
+                      href="#FAQ"
                       class="ud-menu-scroll mx-8 flex py-2 text-base text-dark group-hover:text-secondary lg:mr-0 lg:inline-flex lg:py-6 lg:px-0 lg:text-white lg:group-hover:text-white lg:group-hover:opacity-70"
                     >
                       FAQ
@@ -147,7 +130,7 @@
                   </li>
                   <li class="group relative">
                     <a
-                      "#team"
+                      href="#team"
                       class="ud-menu-scroll mx-8 flex py-2 text-base text-dark group-hover:text-secondary lg:mr-0 lg:ml-7 lg:inline-flex lg:py-6 lg:px-0 lg:text-white lg:group-hover:text-white lg:group-hover:opacity-70 xl:ml-12"
                     >
                       Team
@@ -155,7 +138,7 @@
                   </li>
                   <li class="group relative">
                     <a
-                      "#contact"
+                      href="#contact"
                       class="ud-menu-scroll mx-8 flex py-2 text-base text-dark group-hover:text-secondary lg:mr-0 lg:ml-7 lg:inline-flex lg:py-6 lg:px-0 lg:text-white lg:group-hover:text-white lg:group-hover:opacity-70 xl:ml-12"
                     >
                       Contacto
@@ -163,15 +146,15 @@
                   </li>
                   <li class="group relative">
                     <a
-                      "VistaUsuarioTyD.html"
+                      href="vista-usuario-no-tyd.html"
                       class="mx-8 flex py-2 text-base text-dark group-hover:text-secondary lg:mr-0 lg:ml-7 lg:inline-flex lg:py-6 lg:px-0 lg:text-white lg:group-hover:text-white lg:group-hover:opacity-70 xl:ml-12"
                     >
-                      VistaUsuarioTyD
+                      VistaUsuarioNoTyD
                     </a>
                   </li>
                   <li class="submenu-item group relative">
-                    <a "#"
-                      class="relative mx-8 flex items-center justify-between py-2 font-medium text-sm text-dark dark:text-white group-hover:text-secondary lg:mr-0 lg:ml-8 lg:inline-flex lg:py-6 lg:pl-0 lg:pr-4 lg:text-white lg:group-hover:text-white lg:group-hover:opacity-70">
+                    <a href="#"
+                      class="relative mx-8 flex items-center justify-between py-2 font-medium text-xs text-dark dark:text-white group-hover:text-secondary lg:mr-0 lg:ml-8 lg:inline-flex lg:py-6 lg:pl-0 lg:pr-4 lg:text-white lg:group-hover:text-white lg:group-hover:opacity-70">
                       
                       Español 🇲🇽
                       <svg class="fill-current ml-2" width="16" height="20" viewBox="0 0 16 20" fill="none"
@@ -182,8 +165,8 @@
                     </a>
                     <div
                       class="submenu relative top-full left-0 hidden w-[170px] rounded-sm bg-white dark:bg-dark-2 p-4 transition-[top] duration-300 group-hover:opacity-100 lg:invisible lg:absolute lg:top-[110%] lg:block lg:opacity-0 lg:shadow-lg lg:group-hover:visible lg:group-hover:top-full">
-                      <a "EN_index.html"
-                        class="block rounded py-[10px] px-4 text-sm text-body-color dark:text-dark-6 hover:text-primary dark:hover:text-primary">
+                      <a href="lang-en-vista-usuario-tyd.html"
+                        class="block rounded py-[10px] px-4 text-xs text-body-color dark:text-dark-6 hover:text-primary dark:hover:text-primary">
                         English 🇺🇸
                       </a>
                     </div>
@@ -191,14 +174,13 @@
                 </ul>
               </nav>
             </div>
-            
             <div class="hidden justify-end pr-16 sm:flex lg:pr-0">
               <a
-                "javascript:void(0)"
+                href="javascript:void(0)"
                 onclick="signOut()"
-                class="signUpBtn rounded-lg bg-white bg-opacity-20 py-2 px-2 text-sm font-medium text-white duration-300 ease-in-out hover:bg-opacity-100 hover:text-dark"
+                class="signUpBtn text-sm rounded-lg bg-white bg-opacity-20 px-2 py-2 font-medium text-white duration-300 ease-in-out hover:bg-opacity-100 hover:text-dark"
               >
-                cerrar sesión
+                Cerrar sesión
               </a>
             </div>
           </div>
@@ -225,43 +207,43 @@
                 Help Center
               </h1>
               <p
-                class="mx-auto mb-10 max-w-[600px] text-base text-[#e4e4e4] sm:text-lg sm:leading-relaxed md:text-xl md:leading-relaxed lg:w-8/12"
+                class="mx-auto mb-10 max-w-[600px] text-base text-[#e4e4e4] sm:text-lg sm:leading-relaxed md:text-xl md:leading-relaxed"
               >
                 Centro de apoyo, soporte, asistencia técnica, consultoria, administración y más servicios.
               </p>
               <ul class="mb-10 flex flex-wrap items-center justify-center">
-                  <a
-                    "CategorizacionServiciosTyD.html"
-                    class="inline-flex items-center justify-center rounded-lg bg-white py-4 px-6 text-base font-medium text-dark transition duration-300 ease-in-out hover:text-secondary hover:shadow-lg sm:px-10 w-full mb-4 lg:w-8/12"
-                  >
-                    Categorización de los Servicios de Transformación y Digital
-                  </a>
-                  <a
-                    "ReportesIncidentes.html"
-                    class="inline-flex items-center justify-center rounded-lg bg-secondary py-4 px-6 text-base font-medium text-dark transition duration-300 ease-in-out hover:text-white hover:shadow-lg sm:px-10 w-full mb-4 lg:w-8/12"
-                  >
-                    Reportes de Incidentes generados para el Service Desk
-                  </a>
-                  <a
-                    "https://deacero.statuspage.io/"
-                    target="_blank"
-                    class="flex items-center py-4 px-6 text-base font-medium text-white transition duration-300 ease-in-out hover:opacity-70 sm:px-10"
-                  >
-                    Estatus de los servicios
-                    <span class="pl-2">
-                      <svg
-                        width="20"
-                        height="8"
-                        viewBox="0 0 20 8"
-                        class="fill-current"
-                      >
-                        <path
-                          d="M19.2188 2.90632L17.0625 0.343819C16.875 0.125069 16.5312 0.0938193 16.2812 0.281319C16.0625 0.468819 16.0312 0.812569 16.2188 1.06257L18.25 3.46882H0.9375C0.625 3.46882 0.375 3.71882 0.375 4.03132C0.375 4.34382 0.625 4.59382 0.9375 4.59382H18.25L16.2188 7.00007C16.0312 7.21882 16.0625 7.56257 16.2812 7.78132C16.375 7.87507 16.5 7.90632 16.625 7.90632C16.7812 7.90632 16.9375 7.84382 17.0312 7.71882L19.1875 5.15632C19.75 4.46882 19.75 3.53132 19.2188 2.90632Z"
-                        />
-                      </svg>
-                    </span>
-                  </a>
-              </ul>
+                <a
+                  href="categorizacion-servicios-tyd.html"
+                  class="inline-flex items-center justify-center rounded-lg bg-white py-4 px-6 text-base font-medium text-dark transition duration-300 ease-in-out hover:text-secondary hover:shadow-lg sm:px-10 w-full mb-4 lg:w-8/12"
+                >
+                  Categorización de los Servicios de Transformación y Digital
+                </a>
+                <a
+                  href="reportes-dashboards.html"
+                  class="inline-flex items-center justify-center rounded-lg bg-secondary py-4 px-6 text-base font-medium text-dark transition duration-300 ease-in-out hover:text-white hover:shadow-lg sm:px-10 w-full mb-4 lg:w-8/12"
+                >
+                  Reportes y Dashboards del Service Desk
+                </a>
+                <a
+                  href="https://deacero.statuspage.io/"
+                  target="_blank"
+                  class="flex items-center py-4 px-6 text-base font-medium text-white transition duration-300 ease-in-out hover:opacity-70 sm:px-10"
+                >
+                  Estatus de los servicios
+                  <span class="pl-2">
+                    <svg
+                      width="20"
+                      height="8"
+                      viewBox="0 0 20 8"
+                      class="fill-current"
+                    >
+                      <path
+                        d="M19.2188 2.90632L17.0625 0.343819C16.875 0.125069 16.5312 0.0938193 16.2812 0.281319C16.0625 0.468819 16.0312 0.812569 16.2188 1.06257L18.25 3.46882H0.9375C0.625 3.46882 0.375 3.71882 0.375 4.03132C0.375 4.34382 0.625 4.59382 0.9375 4.59382H18.25L16.2188 7.00007C16.0312 7.21882 16.0625 7.56257 16.2812 7.78132C16.375 7.87507 16.5 7.90632 16.625 7.90632C16.7812 7.90632 16.9375 7.84382 17.0312 7.71882L19.1875 5.15632C19.75 4.46882 19.75 3.53132 19.2188 2.90632Z"
+                      />
+                    </svg>
+                  </span>
+                </a>
+            </ul>
             </div>
           </div>
 
@@ -1419,7 +1401,6 @@
     </div>
     <!-- ====== Hero Section End -->
 
-
     <!-- ====== Servicios Section Start -->
     <section id="servicios" class="pt-20 pb-8 lg:pt-[50px] lg:pb-[70px]">
 
@@ -1447,11 +1428,11 @@
         </div>
 
 
-        <div class="-mx-4 flex flex-wrap">
+        <div class="-mx-4 flex flex-wrap justify-center">
 
-          <div class="w-full px-4 md:w-1/2 lg:w-1/3">
+          <div class="w-full px-4 md:w-1/2 lg:w-1/4">
             <div class="wow fadeInUp group mb-12" data-wow-delay=".1s">
-              <a "SoporteTecnico.html">
+              <a href="soporte-tecnico.html">
               <div class="relative z-10 mb-8 flex h-[70px] w-[70px] items-center justify-center rounded-2xl bg-primary">
                 <span
                   class="absolute top-0 left-0 z-[-1] mb-8 flex h-[70px] w-[70px] rotate-[25deg] items-center justify-center rounded-2xl bg-primary bg-opacity-20 duration-300 group-hover:rotate-45"
@@ -1493,12 +1474,12 @@
                 Soporte Técnico
               </h4>
               <p align="justify" class="text-justify mb-8 text-body-color lg:mb-9">
-                Asistencia técnica para laptops, desktops, impresoras, salas de juntas, correos y red. <br> </br>
+                Asistencia técnica para laptops, desktops, impresoras, salas de juntas, correos y red.
               </p>
               </a>
               <ul class="mb-10 flex flex-wrap items-center justify-start">
                 <a
-                  "https://deacero.atlassian.net/servicedesk/customer/portal/20/group/117"
+                  href="https://deacero.atlassian.net/servicedesk/customer/portal/20/group/117"
                   class="inline-flex items-center justify-end rounded bg-primary py-2 px-4 text-xs font-medium text-white transition duration-300 ease-in-out hover:bg-opacity-90 hover:shadow-lg mb-2 w-full justify-center"
                 >
                 <svg
@@ -1524,7 +1505,7 @@
                 </p>
                 </a>
                 <a
-                  "https://deacero.atlassian.net/servicedesk/customer/portal/20/group/117"
+                  href="https://deacero.atlassian.net/servicedesk/customer/portal/20/group/117"
                   class="inline-flex items-center justify-end rounded bg-primary py-2 px-4 text-xs font-medium text-white transition duration-300 ease-in-out hover:bg-opacity-90 hover:shadow-lg mb-2 w-full justify-center"
                 >
                 <svg
@@ -1535,14 +1516,14 @@
                   xmlns="http://www.w3.org/2000/svg"
                 >
                 <path d="M57.3,45.8l0-30.6c0-3.2-2.8-5.7-6.2-5.7c-0.6,0-1.2,0.1-1.7,0.2V8.5c0-3.2-2.8-5.7-6.2-5.7
-                      c-1.2,0-2.4,0.3-3.3,0.9c-1.1-1.2-2.8-1.9-4.6-1.9c-2.6,0-4.9,1.5-5.8,3.6C28.8,5.1,28.1,5,27.3,5c-3.4,0-6.2,2.6-6.2,5.7v21.6
-                      l-1.3-1.6c-2.3-3-6.5-4-9.8-2.2c-1.6,0.9-2.8,2.4-3.2,4.2c-0.4,1.8,0,3.7,1.2,5.3l9,11.9c0.5,0.6,0.9,1.3,1.4,1.9
-                      c1.4,2,2.9,4.2,5,5.9c4,3.3,9.4,4.5,14.5,4.5c2.5,0,4.8-0.3,7-0.7C57.4,58.8,57.4,49.4,57.3,45.8z M43.9,57.1
-                      c-5.2,1.1-13,1.1-17.6-2.8c-1.6-1.4-2.9-3.2-4.2-5.1c-0.5-0.7-1-1.4-1.5-2.1l-9-11.9c-0.4-0.5-0.5-1.1-0.4-1.6
-                      c0.1-0.5,0.4-0.9,0.9-1.2c1.3-0.7,3.2-0.2,4.1,1c0,0,0.1,0.1,0.1,0.1l5.4,6.4c0.6,0.7,1.6,1,2.5,0.7c0.9-0.3,1.5-1.2,1.5-2.1V10.7
-                      c0-0.6,0.8-1.2,1.7-1.2c0.9,0,1.7,0.6,1.7,1.2l0,17.6c0,1.2,1,2.3,2.3,2.3s2.2-1,2.2-2.3l0-20.9c0-0.7,0.8-1.2,1.7-1.2
-                      S37,6.8,37,7.5v21.6c0,1.2,1,2.3,2.3,2.3s2.3-1,2.3-2.3V8.5c0-0.6,0.8-1.2,1.7-1.2s1.7,0.6,1.7,1.2v22.6c0,1.2,1,2.3,2.3,2.3
-                      s2.3-1,2.3-2.3V15.1c0.1-0.6,0.8-1.1,1.7-1.1c0.9,0,1.7,0.6,1.7,1.2v30.3l0,0.4C52.9,50.4,52.2,55.3,43.9,57.1z"
+                c-1.2,0-2.4,0.3-3.3,0.9c-1.1-1.2-2.8-1.9-4.6-1.9c-2.6,0-4.9,1.5-5.8,3.6C28.8,5.1,28.1,5,27.3,5c-3.4,0-6.2,2.6-6.2,5.7v21.6
+                l-1.3-1.6c-2.3-3-6.5-4-9.8-2.2c-1.6,0.9-2.8,2.4-3.2,4.2c-0.4,1.8,0,3.7,1.2,5.3l9,11.9c0.5,0.6,0.9,1.3,1.4,1.9
+                c1.4,2,2.9,4.2,5,5.9c4,3.3,9.4,4.5,14.5,4.5c2.5,0,4.8-0.3,7-0.7C57.4,58.8,57.4,49.4,57.3,45.8z M43.9,57.1
+                c-5.2,1.1-13,1.1-17.6-2.8c-1.6-1.4-2.9-3.2-4.2-5.1c-0.5-0.7-1-1.4-1.5-2.1l-9-11.9c-0.4-0.5-0.5-1.1-0.4-1.6
+                c0.1-0.5,0.4-0.9,0.9-1.2c1.3-0.7,3.2-0.2,4.1,1c0,0,0.1,0.1,0.1,0.1l5.4,6.4c0.6,0.7,1.6,1,2.5,0.7c0.9-0.3,1.5-1.2,1.5-2.1V10.7
+                c0-0.6,0.8-1.2,1.7-1.2c0.9,0,1.7,0.6,1.7,1.2l0,17.6c0,1.2,1,2.3,2.3,2.3s2.2-1,2.2-2.3l0-20.9c0-0.7,0.8-1.2,1.7-1.2
+                S37,6.8,37,7.5v21.6c0,1.2,1,2.3,2.3,2.3s2.3-1,2.3-2.3V8.5c0-0.6,0.8-1.2,1.7-1.2s1.7,0.6,1.7,1.2v22.6c0,1.2,1,2.3,2.3,2.3
+                s2.3-1,2.3-2.3V15.1c0.1-0.6,0.8-1.1,1.7-1.1c0.9,0,1.7,0.6,1.7,1.2v30.3l0,0.4C52.9,50.4,52.2,55.3,43.9,57.1z"
                   fill="white"/>
                 </svg>
                 <p class="ml-4">
@@ -1553,9 +1534,9 @@
             </div>
           </div>
 
-          <div class="w-full px-4 md:w-1/2 lg:w-1/3">
+          <div class="w-full px-4 md:w-1/2 lg:w-1/4">
             <div class="wow fadeInUp group mb-12" data-wow-delay=".1s">
-              <a "SistemasEmpresariales.html">
+              <a href="sistemas-empresariales.html">
               <div
                 class="relative z-10 mb-8 flex h-[70px] w-[70px] items-center justify-center rounded-2xl bg-primary"
               >
@@ -1587,7 +1568,7 @@
               </a>
               <ul class="mb-10 flex flex-wrap items-center justify-start">
                 <a
-                  "https://deacero.atlassian.net/servicedesk/customer/portal/20/group/123/create/419"
+                  href="https://deacero.atlassian.net/servicedesk/customer/portal/20/group/123/create/419"
                   class="inline-flex items-center justify-end rounded bg-primary py-2 px-4 text-xs font-medium text-white transition duration-300 ease-in-out hover:bg-opacity-90 hover:shadow-lg mb-2 w-full justify-center"
                 >
                 <svg
@@ -1613,94 +1594,7 @@
                 </p>
                 </a>
                 <a
-                  "https://deacero.atlassian.net/servicedesk/customer/portal/20/group/123/create/418"
-                  class="inline-flex items-center justify-end rounded bg-primary py-2 px-4 text-xs font-medium text-white transition duration-300 ease-in-out hover:bg-opacity-90 hover:shadow-lg mb-2 w-full justify-center"
-                >
-                <svg
-                  width="24"
-                  height="24"
-                  viewBox="0 0 64 64"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                <path d="M57.3,45.8l0-30.6c0-3.2-2.8-5.7-6.2-5.7c-0.6,0-1.2,0.1-1.7,0.2V8.5c0-3.2-2.8-5.7-6.2-5.7
-                      c-1.2,0-2.4,0.3-3.3,0.9c-1.1-1.2-2.8-1.9-4.6-1.9c-2.6,0-4.9,1.5-5.8,3.6C28.8,5.1,28.1,5,27.3,5c-3.4,0-6.2,2.6-6.2,5.7v21.6
-                      l-1.3-1.6c-2.3-3-6.5-4-9.8-2.2c-1.6,0.9-2.8,2.4-3.2,4.2c-0.4,1.8,0,3.7,1.2,5.3l9,11.9c0.5,0.6,0.9,1.3,1.4,1.9
-                      c1.4,2,2.9,4.2,5,5.9c4,3.3,9.4,4.5,14.5,4.5c2.5,0,4.8-0.3,7-0.7C57.4,58.8,57.4,49.4,57.3,45.8z M43.9,57.1
-                      c-5.2,1.1-13,1.1-17.6-2.8c-1.6-1.4-2.9-3.2-4.2-5.1c-0.5-0.7-1-1.4-1.5-2.1l-9-11.9c-0.4-0.5-0.5-1.1-0.4-1.6
-                      c0.1-0.5,0.4-0.9,0.9-1.2c1.3-0.7,3.2-0.2,4.1,1c0,0,0.1,0.1,0.1,0.1l5.4,6.4c0.6,0.7,1.6,1,2.5,0.7c0.9-0.3,1.5-1.2,1.5-2.1V10.7
-                      c0-0.6,0.8-1.2,1.7-1.2c0.9,0,1.7,0.6,1.7,1.2l0,17.6c0,1.2,1,2.3,2.3,2.3s2.2-1,2.2-2.3l0-20.9c0-0.7,0.8-1.2,1.7-1.2
-                      S37,6.8,37,7.5v21.6c0,1.2,1,2.3,2.3,2.3s2.3-1,2.3-2.3V8.5c0-0.6,0.8-1.2,1.7-1.2s1.7,0.6,1.7,1.2v22.6c0,1.2,1,2.3,2.3,2.3
-                      s2.3-1,2.3-2.3V15.1c0.1-0.6,0.8-1.1,1.7-1.1c0.9,0,1.7,0.6,1.7,1.2v30.3l0,0.4C52.9,50.4,52.2,55.3,43.9,57.1z"
-                  fill="white"/>
-                </svg>
-                <p class="ml-4">
-                  Requiero un servicio
-                </p>
-                </a>
-                <!-- <a
-                  "https://deacero.atlassian.net/servicedesk/customer/portal/20/group/123/create/421"
-                  class="inline-flex items-center justify-end rounded bg-primary py-2 px-4 text-xs font-medium text-white transition duration-300 ease-in-out hover:bg-opacity-90 hover:shadow-lg mb-2 w-full justify-center"
-                >
-                <svg
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                  stroke-width="1.5"
-                  stroke="white"
-                  class="w-6 h-6"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    d="M6 12L3.269 3.126A59.768 59.768 0 0121.485 12 59.77 59.77 0 013.27 20.876L5.999 12zm0 0h7.5"
-                  />
-                </svg>
-                <p class="ml-4">
-                  Envío de requerimientos de desarrollo
-                </p>
-                </a> -->
-              </ul>
-            </div>
-          </div>
-          
-          <div class="w-full px-4 md:w-1/2 lg:w-1/3">
-            <div class="wow fadeInUp group mb-12" data-wow-delay=".1s">
-              <a "TransformacionProcesos.html">
-              <div
-                class="relative z-10 mb-8 flex h-[70px] w-[70px] items-center justify-center rounded-2xl bg-primary"
-              >
-                <span
-                  class="absolute top-0 left-0 z-[-1] mb-8 flex h-[70px] w-[70px] rotate-[25deg] items-center justify-center rounded-2xl bg-primary bg-opacity-20 duration-300 group-hover:rotate-45"
-                ></span>
-                <svg
-                  width="32"
-                  height="32"
-                  viewBox="0 0 64 64"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                <path d="M48.1,38.5c1.9,0,3.5-1.6,3.5-3.5v-7.4c0-1.9-1.6-3.5-3.5-3.5h-7.4c-1.9,0-3.5,1.6-3.5,3.5v1.4H26.8v-1.4
-                        c0-1.9-1.6-3.5-3.5-3.5h-1.4v-7.9h1.4c1.9,0,3.5-1.6,3.5-3.5V5.3c0-1.9-1.6-3.5-3.5-3.5h-7.4c-1.9,0-3.5,1.6-3.5,3.5v7.4
-                        c0,1.9,1.6,3.5,3.5,3.5h1.4v7.9h-1.4c-1.9,0-3.5,1.6-3.5,3.5V35c0,1.9,1.6,3.5,3.5,3.5h7.4c1.9,0,3.5-1.6,3.5-3.5v-1.4h10.4V35
-                        c0,1.9,1.6,3.5,3.5,3.5h1.4v9.3h-1.4c-1.9,0-3.5,1.6-3.5,3.5v7.4c0,1.9,1.6,3.5,3.5,3.5h7.4c1.9,0,3.5-1.6,3.5-3.5v-7.4
-                        c0-1.9-1.6-3.5-3.5-3.5h-1.4v-9.3H48.1z M16.9,6.2h5.4v5.4h-5.4V6.2z M22.3,34h-5.4v-5.4h2.7c0,0,0,0,0,0s0,0,0,0h2.7V34z
-                        M47.1,57.8h-5.4v-5.4h5.4V57.8z M41.7,28.6h5.4V34h-5.4V28.6z"
-                  fill="white"/>
-                </svg>
-              </div>
-              <h4 class="mb-3 text-xl font-bold text-dark transition duration-300 ease-in-out hover:text-secondary">
-                Transformación y Procesos
-              </h4>
-              <p align="justify" class="mb-8 text-body-color lg:mb-9">
-                Asistencia y orientación en los procesos de negocio, transformación y gestión de proyectos. <br> </br>
-              </p>
-              </a>
-              <ul class="mb-10 flex flex-wrap items-center justify-start">
-                <a
-                  "https://deacero.atlassian.net/servicedesk/customer/portal/20/group/124"
+                  href="https://deacero.atlassian.net/servicedesk/customer/portal/20/group/123/create/418"
                   class="inline-flex items-center justify-end rounded bg-primary py-2 px-4 text-xs font-medium text-white transition duration-300 ease-in-out hover:bg-opacity-90 hover:shadow-lg mb-2 w-full justify-center"
                 >
                 <svg
@@ -1725,17 +1619,37 @@
                   Requiero un servicio
                 </p>
                 </a>
+                <a
+                  href="https://deacero.atlassian.net/servicedesk/customer/portal/20/group/123/create/421"
+                  class="inline-flex items-center justify-end rounded bg-primary py-2 px-4 text-xs font-medium text-white transition duration-300 ease-in-out hover:bg-opacity-90 hover:shadow-lg mb-2 w-full justify-center"
+                >
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  stroke-width="1.5"
+                  stroke="white"
+                  class="w-6 h-6"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M6 12L3.269 3.126A59.768 59.768 0 0121.485 12 59.77 59.77 0 013.27 20.876L5.999 12zm0 0h7.5"
+                  />
+                </svg>
+                <p class="ml-4">
+                  Envío de requerimientos de desarrollo
+                </p>
+                </a>
               </ul>
             </div>
           </div>
-        </div>
 
-
-        <div class="-mx-4 flex flex-wrap mt-12 mb-12 justify-center">
-
-          <div class="w-full px-4 md:w-1/2 lg:w-1/3">
+          <div class="w-full px-4 md:w-1/2 lg:w-1/4">
             <div class="wow fadeInUp group mb-12" data-wow-delay=".1s">
-              <a "NegocioAdministrativos.html">
+              <a href="negocios-administrativos.html">
               <div
                 class="relative z-10 mb-8 flex h-[70px] w-[70px] items-center justify-center rounded-2xl bg-primary"
               >
@@ -1769,12 +1683,12 @@
                 Negocio y Administrativos
               </h4>
               <p align="justify" class="mb-8 text-body-color lg:mb-9">
-                Compras de equipos de cómputo, periféricos y licencias de software.
+                Compras de equipos de cómputo, periféricos y licencias de software. <br></br>
               </p>
               </a>
               <ul class="mb-10 flex flex-wrap items-center justify-start">
                 <a
-                  "https://deacero.atlassian.net/servicedesk/customer/portal/3/group/29/create/85"
+                  href="https://deacero.atlassian.net/servicedesk/customer/portal/3/group/29/create/85"
                   class="inline-flex items-center justify-end rounded bg-primary py-2 px-4 text-xs font-medium text-white transition duration-300 ease-in-out hover:bg-opacity-90 hover:shadow-lg mb-2 w-full justify-center"
                 >
                 <svg
@@ -1803,9 +1717,9 @@
             </div>
           </div>
 
-          <div class="w-full px-4 md:w-1/2 lg:w-1/3">
+          <div class="w-full px-4 md:w-1/2 lg:w-1/4">
             <div class="wow fadeInUp group mb-12" data-wow-delay=".1s">
-              <a "DatosAnalitica.html">
+              <a href="datos-analitica.html">
               <div
                 class="relative z-10 mb-8 flex h-[70px] w-[70px] items-center justify-center rounded-2xl bg-primary"
               >
@@ -1832,16 +1746,41 @@
                 </svg>
               </div>
               <h4 class="mb-3 text-xl font-bold text-dark transition duration-300 ease-in-out hover:text-secondary">
-                Dashboards y Reportes
+                Datos y Analítica
               </h4>
               <p align="justify" class="mb-8 text-body-color lg:mb-9">
                 Asistencia técnica en reportes, Data Warehouse, dashboards, data management, modelación.
               </p>
               </a>
               <ul class="mb-10 flex flex-wrap items-center justify-start">
-                
                 <a
-                  "https://deacero.atlassian.net/servicedesk/customer/portal/20/group/126/create/430"
+                  href="https://deacero.atlassian.net/servicedesk/customer/portal/20/group/126/create/430"
+                  class="inline-flex items-center justify-end rounded bg-primary py-2 px-4 text-xs font-medium text-white transition duration-300 ease-in-out hover:bg-opacity-90 hover:shadow-lg mb-2 w-full justify-center"
+                >
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 64 64"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                <g>
+                  <path d="M60.5,41.3L39.1,12.2c-1.7-2.3-4.3-3.6-7.1-3.6c-2.9,0-5.5,1.3-7.1,3.6L3.5,41.3c-2,2.7-2.3,6.2-0.8,9.2s4.5,4.9,7.9,4.9
+                    h42.8c3.4,0,6.4-1.9,7.9-4.9C62.8,47.6,62.5,44,60.5,41.3z M57.3,48.5c-0.8,1.5-2.2,2.4-3.9,2.4H10.6c-1.7,0-3.1-0.9-3.9-2.4
+                    C6,47,6.1,45.3,7.1,44l21.4-29.1c0.8-1.1,2.1-1.8,3.5-1.8c1.4,0,2.7,0.6,3.5,1.8L56.9,44C57.9,45.3,58,47,57.3,48.5z"
+                    fill="white"/>
+                  <path d="M32,23c-1.2,0-2.3,1-2.3,2.3v10.9c0,1.2,1,2.3,2.3,2.3s2.3-1,2.3-2.3V25.2C34.3,24,33.2,23,32,23z"
+                  fill="white"/>
+                  <path d="M32,40.8c-1.2,0-2.3,1-2.3,2.3v0.5c0,1.2,1,2.3,2.3,2.3s2.3-1,2.3-2.3V43C34.3,41.8,33.2,40.8,32,40.8z"
+                  fill="white"/>
+                </g>
+                </svg>
+                <p class="ml-4">
+                  Tengo un problema y necesito ayuda
+                </p>
+                </a>
+                <a
+                  href="https://deacero.atlassian.net/servicedesk/customer/portal/20/group/126/create/430"
                   class="inline-flex items-center justify-end rounded bg-primary py-2 px-4 text-xs font-medium text-white transition duration-300 ease-in-out hover:bg-opacity-90 hover:shadow-lg mb-2 w-full justify-center"
                 >
                 <svg
@@ -1870,8 +1809,543 @@
             </div>
           </div>
 
+          
+          
         </div>
+
+        <div class="-mx-4 flex flex-wrap mt-12 justify-center">
+
+          <div class="w-full px-4 md:w-1/2 lg:w-1/4">
+            <div class="wow fadeInUp group mb-12" data-wow-delay=".1s">
+              <a href="digital-workplace.html">
+              <div
+                class="relative z-10 mb-8 flex h-[70px] w-[70px] items-center justify-center rounded-2xl bg-primary"
+              >
+                <span
+                  class="absolute top-0 left-0 z-[-1] mb-8 flex h-[70px] w-[70px] rotate-[25deg] items-center justify-center rounded-2xl bg-primary bg-opacity-20 duration-300 group-hover:rotate-45"
+                ></span>
+                <svg
+                  width="32"
+                  height="32"
+                  viewBox="0 0 64 64"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                <path d="M1 30.6C10.9 30.6 20.7 30.6 30.6 30.6C30.6 20.7 30.6 10.9 30.6 1H1V30.6Z"
+                fill="white"/>
+                <path d="M62.9984 30.6C62.9984 20.7 62.9984 10.9 62.9984 1H33.3984C33.3984 10.9 33.3984 20.7 33.3984 30.6C43.2984 30.6 53.0984 30.6 62.9984 30.6Z"
+                fill="white"/>
+                <path d="M1 63.0004H30.6C30.6 53.1004 30.6 43.3004 30.6 33.4004C20.7 33.4004 10.9 33.4004 1 33.4004V63.0004Z"
+                fill="white"/>
+                <path d="M33.3984 63.0004H62.9984C62.9984 53.1004 62.9984 43.3004 62.9984 33.4004C53.0984 33.4004 43.2984 33.4004 33.3984 33.4004C33.3984 43.3004 33.3984 53.1004 33.3984 63.0004Z"
+                fill="white"/>
+                </svg>
+              </div>
+              <h4 class="mb-3 text-xl font-bold text-dark transition duration-300 ease-in-out hover:text-secondary">
+                Digital Workplace
+              </h4>
+              <p align="justify" class="mb-8 text-body-color lg:mb-9">
+                Administración de Microsoft 365, Document Center, Sharepoint, IAM y MS Exchange.
+              </p>
+              </a>
+              <ul class="mb-10 flex flex-wrap items-center justify-start">
+                <a
+                  href="https://deacero.atlassian.net/servicedesk/customer/portal/20/group/121"
+                  class="inline-flex items-center justify-end rounded bg-primary py-2 px-4 text-xs font-medium text-white transition duration-300 ease-in-out hover:bg-opacity-90 hover:shadow-lg mb-2 w-full justify-center"
+                >
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 64 64"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                <g>
+                  <path d="M60.5,41.3L39.1,12.2c-1.7-2.3-4.3-3.6-7.1-3.6c-2.9,0-5.5,1.3-7.1,3.6L3.5,41.3c-2,2.7-2.3,6.2-0.8,9.2s4.5,4.9,7.9,4.9
+                    h42.8c3.4,0,6.4-1.9,7.9-4.9C62.8,47.6,62.5,44,60.5,41.3z M57.3,48.5c-0.8,1.5-2.2,2.4-3.9,2.4H10.6c-1.7,0-3.1-0.9-3.9-2.4
+                    C6,47,6.1,45.3,7.1,44l21.4-29.1c0.8-1.1,2.1-1.8,3.5-1.8c1.4,0,2.7,0.6,3.5,1.8L56.9,44C57.9,45.3,58,47,57.3,48.5z"
+                    fill="white"/>
+                  <path d="M32,23c-1.2,0-2.3,1-2.3,2.3v10.9c0,1.2,1,2.3,2.3,2.3s2.3-1,2.3-2.3V25.2C34.3,24,33.2,23,32,23z"
+                  fill="white"/>
+                  <path d="M32,40.8c-1.2,0-2.3,1-2.3,2.3v0.5c0,1.2,1,2.3,2.3,2.3s2.3-1,2.3-2.3V43C34.3,41.8,33.2,40.8,32,40.8z"
+                  fill="white"/>
+                </g>
+                </svg>
+                <p class="ml-4">
+                  Tengo un problema y necesito ayuda
+                </p>
+                </a>
+                <a
+                  href="https://deacero.atlassian.net/servicedesk/customer/portal/20/group/121"
+                  class="inline-flex items-center justify-end rounded bg-primary py-2 px-4 text-xs font-medium text-white transition duration-300 ease-in-out hover:bg-opacity-90 hover:shadow-lg mb-2 w-full justify-center"
+                >
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 64 64"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                <path d="M57.3,45.8l0-30.6c0-3.2-2.8-5.7-6.2-5.7c-0.6,0-1.2,0.1-1.7,0.2V8.5c0-3.2-2.8-5.7-6.2-5.7
+                c-1.2,0-2.4,0.3-3.3,0.9c-1.1-1.2-2.8-1.9-4.6-1.9c-2.6,0-4.9,1.5-5.8,3.6C28.8,5.1,28.1,5,27.3,5c-3.4,0-6.2,2.6-6.2,5.7v21.6
+                l-1.3-1.6c-2.3-3-6.5-4-9.8-2.2c-1.6,0.9-2.8,2.4-3.2,4.2c-0.4,1.8,0,3.7,1.2,5.3l9,11.9c0.5,0.6,0.9,1.3,1.4,1.9
+                c1.4,2,2.9,4.2,5,5.9c4,3.3,9.4,4.5,14.5,4.5c2.5,0,4.8-0.3,7-0.7C57.4,58.8,57.4,49.4,57.3,45.8z M43.9,57.1
+                c-5.2,1.1-13,1.1-17.6-2.8c-1.6-1.4-2.9-3.2-4.2-5.1c-0.5-0.7-1-1.4-1.5-2.1l-9-11.9c-0.4-0.5-0.5-1.1-0.4-1.6
+                c0.1-0.5,0.4-0.9,0.9-1.2c1.3-0.7,3.2-0.2,4.1,1c0,0,0.1,0.1,0.1,0.1l5.4,6.4c0.6,0.7,1.6,1,2.5,0.7c0.9-0.3,1.5-1.2,1.5-2.1V10.7
+                c0-0.6,0.8-1.2,1.7-1.2c0.9,0,1.7,0.6,1.7,1.2l0,17.6c0,1.2,1,2.3,2.3,2.3s2.2-1,2.2-2.3l0-20.9c0-0.7,0.8-1.2,1.7-1.2
+                S37,6.8,37,7.5v21.6c0,1.2,1,2.3,2.3,2.3s2.3-1,2.3-2.3V8.5c0-0.6,0.8-1.2,1.7-1.2s1.7,0.6,1.7,1.2v22.6c0,1.2,1,2.3,2.3,2.3
+                s2.3-1,2.3-2.3V15.1c0.1-0.6,0.8-1.1,1.7-1.1c0.9,0,1.7,0.6,1.7,1.2v30.3l0,0.4C52.9,50.4,52.2,55.3,43.9,57.1z"
+                  fill="white"/>
+                </svg>
+                <p class="ml-4">
+                  Requiero un servicio
+                </p>
+                </a>
+                <a
+                  href="https://deacero.atlassian.net/servicedesk/customer/portal/20/group/121"
+                  class="inline-flex items-center justify-end rounded bg-primary py-2 px-4 text-xs font-medium text-white transition duration-300 ease-in-out hover:bg-opacity-90 hover:shadow-lg mb-2 w-full justify-center"
+                >
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  stroke-width="1.5"
+                  stroke="white"
+                  class="w-6 h-6"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M16.023 9.348h4.992v-.001M2.985 19.644v-4.992m0 0h4.992m-4.993 0l3.181 3.183a8.25 8.25 0 0013.803-3.7M4.031 9.865a8.25 8.25 0 0113.803-3.7l3.181 3.182m0-4.991v4.99"
+                  />
+                </svg>
+                <p class="ml-4">
+                  Gestión de cambios
+                </p>
+                </a>
+              </ul>
+            </div>
+          </div>
+
+          <div class="w-full px-4 md:w-1/2 lg:w-1/4">
+            <div class="wow fadeInUp group mb-12" data-wow-delay=".1s">
+              <a href="redes-comunicaciones.html">
+              <div
+                class="relative z-10 mb-8 flex h-[70px] w-[70px] items-center justify-center rounded-2xl bg-primary"
+              >
+                <span
+                  class="absolute top-0 left-0 z-[-1] mb-8 flex h-[70px] w-[70px] rotate-[25deg] items-center justify-center rounded-2xl bg-primary bg-opacity-20 duration-300 group-hover:rotate-45"
+                ></span>
+                <svg
+                  width="32"
+                  height="32"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  stroke-width="1.5"
+                  stroke="white"
+                  class="w-6 h-6">
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M8.288 15.038a5.25 5.25 0 017.424 0M5.106 11.856c3.807-3.808 9.98-3.808 13.788 0M1.924 8.674c5.565-5.565 14.587-5.565 20.152 0M12.53 18.22l-.53.53-.53-.53a.75.75 0 011.06 0z"
+                    />
+                </svg>
+                
+                </svg>
+              </div>
+              <h4 class="mb-3 text-xl font-bold text-dark transition duration-300 ease-in-out hover:text-secondary">
+                Redes y Comunicaciones
+              </h4>
+              <p align="justify" class="mb-8 text-body-color lg:mb-9">
+                Servicio de redes, SD-WAN, red perimetral, MPLS, enlaces de internet. <br></br>
+              </p>
+              </a>
+              <ul class="mb-10 flex flex-wrap items-center justify-start">
+                <a
+                  href="https://deacero.atlassian.net/servicedesk/customer/portal/20/group/119"
+                  class="inline-flex items-center justify-end rounded bg-primary py-2 px-4 text-xs font-medium text-white transition duration-300 ease-in-out hover:bg-opacity-90 hover:shadow-lg mb-2 w-full justify-center"
+                >
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 64 64"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                <g>
+                  <path d="M60.5,41.3L39.1,12.2c-1.7-2.3-4.3-3.6-7.1-3.6c-2.9,0-5.5,1.3-7.1,3.6L3.5,41.3c-2,2.7-2.3,6.2-0.8,9.2s4.5,4.9,7.9,4.9
+                    h42.8c3.4,0,6.4-1.9,7.9-4.9C62.8,47.6,62.5,44,60.5,41.3z M57.3,48.5c-0.8,1.5-2.2,2.4-3.9,2.4H10.6c-1.7,0-3.1-0.9-3.9-2.4
+                    C6,47,6.1,45.3,7.1,44l21.4-29.1c0.8-1.1,2.1-1.8,3.5-1.8c1.4,0,2.7,0.6,3.5,1.8L56.9,44C57.9,45.3,58,47,57.3,48.5z"
+                    fill="white"/>
+                  <path d="M32,23c-1.2,0-2.3,1-2.3,2.3v10.9c0,1.2,1,2.3,2.3,2.3s2.3-1,2.3-2.3V25.2C34.3,24,33.2,23,32,23z"
+                  fill="white"/>
+                  <path d="M32,40.8c-1.2,0-2.3,1-2.3,2.3v0.5c0,1.2,1,2.3,2.3,2.3s2.3-1,2.3-2.3V43C34.3,41.8,33.2,40.8,32,40.8z"
+                  fill="white"/>
+                </g>
+                </svg>
+                <p class="ml-4">
+                  Tengo un problema y necesito ayuda
+                </p>
+                </a>
+                <a
+                  href="https://deacero.atlassian.net/servicedesk/customer/portal/20/group/119"
+                  class="inline-flex items-center justify-end rounded bg-primary py-2 px-4 text-xs font-medium text-white transition duration-300 ease-in-out hover:bg-opacity-90 hover:shadow-lg mb-2 w-full justify-center"
+                >
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 64 64"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                <path d="M57.3,45.8l0-30.6c0-3.2-2.8-5.7-6.2-5.7c-0.6,0-1.2,0.1-1.7,0.2V8.5c0-3.2-2.8-5.7-6.2-5.7
+                c-1.2,0-2.4,0.3-3.3,0.9c-1.1-1.2-2.8-1.9-4.6-1.9c-2.6,0-4.9,1.5-5.8,3.6C28.8,5.1,28.1,5,27.3,5c-3.4,0-6.2,2.6-6.2,5.7v21.6
+                l-1.3-1.6c-2.3-3-6.5-4-9.8-2.2c-1.6,0.9-2.8,2.4-3.2,4.2c-0.4,1.8,0,3.7,1.2,5.3l9,11.9c0.5,0.6,0.9,1.3,1.4,1.9
+                c1.4,2,2.9,4.2,5,5.9c4,3.3,9.4,4.5,14.5,4.5c2.5,0,4.8-0.3,7-0.7C57.4,58.8,57.4,49.4,57.3,45.8z M43.9,57.1
+                c-5.2,1.1-13,1.1-17.6-2.8c-1.6-1.4-2.9-3.2-4.2-5.1c-0.5-0.7-1-1.4-1.5-2.1l-9-11.9c-0.4-0.5-0.5-1.1-0.4-1.6
+                c0.1-0.5,0.4-0.9,0.9-1.2c1.3-0.7,3.2-0.2,4.1,1c0,0,0.1,0.1,0.1,0.1l5.4,6.4c0.6,0.7,1.6,1,2.5,0.7c0.9-0.3,1.5-1.2,1.5-2.1V10.7
+                c0-0.6,0.8-1.2,1.7-1.2c0.9,0,1.7,0.6,1.7,1.2l0,17.6c0,1.2,1,2.3,2.3,2.3s2.2-1,2.2-2.3l0-20.9c0-0.7,0.8-1.2,1.7-1.2
+                S37,6.8,37,7.5v21.6c0,1.2,1,2.3,2.3,2.3s2.3-1,2.3-2.3V8.5c0-0.6,0.8-1.2,1.7-1.2s1.7,0.6,1.7,1.2v22.6c0,1.2,1,2.3,2.3,2.3
+                s2.3-1,2.3-2.3V15.1c0.1-0.6,0.8-1.1,1.7-1.1c0.9,0,1.7,0.6,1.7,1.2v30.3l0,0.4C52.9,50.4,52.2,55.3,43.9,57.1z"
+                  fill="white"/>
+                </svg>
+                <p class="ml-4">
+                  Requiero un servicio
+                </p>
+                </a>
+                <a
+                  href="https://deacero.atlassian.net/servicedesk/customer/portal/20/group/119"
+                  class="inline-flex items-center justify-end rounded bg-primary py-2 px-4 text-xs font-medium text-white transition duration-300 ease-in-out hover:bg-opacity-90 hover:shadow-lg mb-2 w-full justify-center"
+                >
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  stroke-width="1.5"
+                  stroke="white"
+                  class="w-6 h-6"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M16.023 9.348h4.992v-.001M2.985 19.644v-4.992m0 0h4.992m-4.993 0l3.181 3.183a8.25 8.25 0 0013.803-3.7M4.031 9.865a8.25 8.25 0 0113.803-3.7l3.181 3.182m0-4.991v4.99"
+                  />
+                </svg>
+                <p class="ml-4">
+                  Gestión de cambios
+                </p>
+                </a>
+              </ul>
+            </div>
+          </div>
+
+          <div class="w-full px-4 md:w-1/2 lg:w-1/4">
+            <div class="wow fadeInUp group mb-12" data-wow-delay=".1s">
+              <a href="ciberseguridad.html">
+              <div
+                class="relative z-10 mb-8 flex h-[70px] w-[70px] items-center justify-center rounded-2xl bg-primary"
+              >
+                <span
+                  class="absolute top-0 left-0 z-[-1] mb-8 flex h-[70px] w-[70px] rotate-[25deg] items-center justify-center rounded-2xl bg-primary bg-opacity-20 duration-300 group-hover:rotate-45"
+                ></span>
+                <svg
+                  width="32"
+                  height="32"
+                  viewBox="0 0 64 64"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                <g>
+                  <path d="M53.6,7.5L33.3,1.9c-0.8-0.2-1.7-0.2-2.5,0L10.4,7.5C8.3,8.1,6.8,10,6.8,12.2V27c0,15.5,9.2,29.2,23.4,34.9
+                    c0.6,0.2,1.2,0.4,1.8,0.4s1.2-0.1,1.8-0.4c14.2-5.7,23.4-19.5,23.4-35V12.2C57.2,10,55.7,8.1,53.6,7.5z M52.7,26.9
+                    c0,13.4-8.3,25.8-20.5,30.8c-0.1,0-0.2,0-0.3,0C19.4,52.7,11.3,40.6,11.3,27V12.2c0-0.1,0.1-0.3,0.2-0.3l20.4-5.6c0,0,0.1,0,0.1,0
+                    c0,0,0,0,0.1,0l20.4,5.6c0.1,0,0.2,0.2,0.2,0.3V26.9z"
+                    fill="white"/>
+                  <path d="M43.3,22.6L29.5,34.2L23.3,29c-1-0.8-2.4-0.7-3.2,0.3c-0.8,1-0.7,2.4,0.3,3.2l7.6,6.4c0.4,0.4,0.9,0.5,1.4,0.5
+                    s1-0.2,1.4-0.5L46.2,26c1-0.8,1.1-2.2,0.3-3.2C45.7,21.9,44.2,21.8,43.3,22.6z"
+                    fill="white"/>
+                </g>
+                </svg>
+              </div>
+              <h4 class="mb-3 text-xl font-bold text-dark transition duration-300 ease-in-out hover:text-secondary">
+                Ciberseguridad
+              </h4>
+              <p align="justify" class="mb-8 text-body-color lg:mb-9">
+                Antivirus, auditorías, certificados, vulnerabilidades, PAM, MDM. <br></br>
+              </p>
+              </a>
+              <ul class="mb-10 flex flex-wrap items-center justify-start">
+                <a
+                  href="https://deacero.atlassian.net/servicedesk/customer/portal/20/group/121"
+                  class="inline-flex items-center justify-end rounded bg-primary py-2 px-4 text-xs font-medium text-white transition duration-300 ease-in-out hover:bg-opacity-90 hover:shadow-lg mb-2 w-full justify-center"
+                >
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 64 64"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                <g>
+                  <path d="M60.5,41.3L39.1,12.2c-1.7-2.3-4.3-3.6-7.1-3.6c-2.9,0-5.5,1.3-7.1,3.6L3.5,41.3c-2,2.7-2.3,6.2-0.8,9.2s4.5,4.9,7.9,4.9
+                    h42.8c3.4,0,6.4-1.9,7.9-4.9C62.8,47.6,62.5,44,60.5,41.3z M57.3,48.5c-0.8,1.5-2.2,2.4-3.9,2.4H10.6c-1.7,0-3.1-0.9-3.9-2.4
+                    C6,47,6.1,45.3,7.1,44l21.4-29.1c0.8-1.1,2.1-1.8,3.5-1.8c1.4,0,2.7,0.6,3.5,1.8L56.9,44C57.9,45.3,58,47,57.3,48.5z"
+                    fill="white"/>
+                  <path d="M32,23c-1.2,0-2.3,1-2.3,2.3v10.9c0,1.2,1,2.3,2.3,2.3s2.3-1,2.3-2.3V25.2C34.3,24,33.2,23,32,23z"
+                  fill="white"/>
+                  <path d="M32,40.8c-1.2,0-2.3,1-2.3,2.3v0.5c0,1.2,1,2.3,2.3,2.3s2.3-1,2.3-2.3V43C34.3,41.8,33.2,40.8,32,40.8z"
+                  fill="white"/>
+                </g>
+                </svg>
+                <p class="ml-4">
+                  Tengo un problema y necesito ayuda
+                </p>
+                </a>
+                <a
+                  href="https://deacero.atlassian.net/servicedesk/customer/portal/20/group/121"
+                  class="inline-flex items-center justify-end rounded bg-primary py-2 px-4 text-xs font-medium text-white transition duration-300 ease-in-out hover:bg-opacity-90 hover:shadow-lg mb-2 w-full justify-center"
+                >
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 64 64"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                <path d="M57.3,45.8l0-30.6c0-3.2-2.8-5.7-6.2-5.7c-0.6,0-1.2,0.1-1.7,0.2V8.5c0-3.2-2.8-5.7-6.2-5.7
+                c-1.2,0-2.4,0.3-3.3,0.9c-1.1-1.2-2.8-1.9-4.6-1.9c-2.6,0-4.9,1.5-5.8,3.6C28.8,5.1,28.1,5,27.3,5c-3.4,0-6.2,2.6-6.2,5.7v21.6
+                l-1.3-1.6c-2.3-3-6.5-4-9.8-2.2c-1.6,0.9-2.8,2.4-3.2,4.2c-0.4,1.8,0,3.7,1.2,5.3l9,11.9c0.5,0.6,0.9,1.3,1.4,1.9
+                c1.4,2,2.9,4.2,5,5.9c4,3.3,9.4,4.5,14.5,4.5c2.5,0,4.8-0.3,7-0.7C57.4,58.8,57.4,49.4,57.3,45.8z M43.9,57.1
+                c-5.2,1.1-13,1.1-17.6-2.8c-1.6-1.4-2.9-3.2-4.2-5.1c-0.5-0.7-1-1.4-1.5-2.1l-9-11.9c-0.4-0.5-0.5-1.1-0.4-1.6
+                c0.1-0.5,0.4-0.9,0.9-1.2c1.3-0.7,3.2-0.2,4.1,1c0,0,0.1,0.1,0.1,0.1l5.4,6.4c0.6,0.7,1.6,1,2.5,0.7c0.9-0.3,1.5-1.2,1.5-2.1V10.7
+                c0-0.6,0.8-1.2,1.7-1.2c0.9,0,1.7,0.6,1.7,1.2l0,17.6c0,1.2,1,2.3,2.3,2.3s2.2-1,2.2-2.3l0-20.9c0-0.7,0.8-1.2,1.7-1.2
+                S37,6.8,37,7.5v21.6c0,1.2,1,2.3,2.3,2.3s2.3-1,2.3-2.3V8.5c0-0.6,0.8-1.2,1.7-1.2s1.7,0.6,1.7,1.2v22.6c0,1.2,1,2.3,2.3,2.3
+                s2.3-1,2.3-2.3V15.1c0.1-0.6,0.8-1.1,1.7-1.1c0.9,0,1.7,0.6,1.7,1.2v30.3l0,0.4C52.9,50.4,52.2,55.3,43.9,57.1z"
+                  fill="white"/>
+                </svg>
+                <p class="ml-4">
+                  Requiero un servicio
+                </p>
+                </a>
+                <a
+                  href="https://deacero.atlassian.net/servicedesk/customer/portal/20/group/121"
+                  class="inline-flex items-center justify-end rounded bg-primary py-2 px-4 text-xs font-medium text-white transition duration-300 ease-in-out hover:bg-opacity-90 hover:shadow-lg mb-2 w-full justify-center"
+                >
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  stroke-width="1.5"
+                  stroke="white"
+                  class="w-6 h-6"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M16.023 9.348h4.992v-.001M2.985 19.644v-4.992m0 0h4.992m-4.993 0l3.181 3.183a8.25 8.25 0 0013.803-3.7M4.031 9.865a8.25 8.25 0 0113.803-3.7l3.181 3.182m0-4.991v4.99"
+                  />
+                </svg>
+                <p class="ml-4">
+                  Gestión de cambios
+                </p>
+                </a>
+              </ul>
+            </div>
+          </div>
+
+          <div class="w-full px-4 md:w-1/2 lg:w-1/4">
+            <div class="wow fadeInUp group mb-12" data-wow-delay=".1s">
+              <a href="infraestructura.html">
+              <div
+                class="relative z-10 mb-8 flex h-[70px] w-[70px] items-center justify-center rounded-2xl bg-primary"
+              >
+                <span
+                  class="absolute top-0 left-0 z-[-1] mb-8 flex h-[70px] w-[70px] rotate-[25deg] items-center justify-center rounded-2xl bg-primary bg-opacity-20 duration-300 group-hover:rotate-45"
+                ></span>
+                <svg
+                  width="32"
+                  height="32"
+                  viewBox="0 0 64 64"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                <path d="M54.9,41.6c-3.2,0-6,2.1-6.9,5h-1v-6.4c5.4-2,9.2-7.2,9.2-13.2c0-3.5-1.3-7-3.8-9.6c-2-2.2-4.8-3.7-7.7-4.3
+                c-1.7-2.5-4.1-4.4-6.9-5.4c-1.3-0.5-2.9-0.8-4.5-0.8c-7.1,0-13,5.4-13.7,12.3c-5.2,0.9-9.3,5.4-9.3,10.9c0,4.5,2.7,8.4,6.7,10.1v6.4
+                h-1c-1-2.9-3.7-5-6.9-5c-4,0-7.3,3.2-7.3,7.2c0,4,3.3,7.2,7.3,7.2c3.2,0,6-2.1,6.9-5h2.7c1.6,0,2.8-1.3,2.8-2.8V41h8.2v2.1
+                c-2.9,0.9-5.1,3.7-5.1,6.9c0,4,3.3,7.2,7.3,7.2c4,0,7.3-3.2,7.3-7.2c0-3.2-2.1-5.9-5.1-6.9V41h7.7c0.2,0,0.4,0,0.6,0v7.2
+                c0,1.6,1.3,2.8,2.9,2.8H48c1,2.9,3.7,5,6.9,5c4,0,7.3-3.2,7.3-7.2C62.3,44.8,59,41.6,54.9,41.6z M9.1,51.5c-1.5,0-2.8-1.2-2.8-2.7
+                c0-1.5,1.3-2.7,2.8-2.7s2.8,1.2,2.8,2.7C11.9,50.2,10.6,51.5,9.1,51.5z M32,52.6c-1.5,0-2.8-1.2-2.8-2.7c0-1.5,1.3-2.7,2.8-2.7
+                c1.5,0,2.8,1.2,2.8,2.7C34.8,51.4,33.5,52.6,32,52.6z M21.4,36.5c-3.7,0-6.6-2.9-6.6-6.5c0-3.6,2.9-6.5,6.6-6.5h0.4
+                c1.2,0,2.3-1,2.3-2.3v-0.8c0-5,4.1-9.1,9.2-9.1c1.1,0,2.1,0.2,3,0.5c2.1,0.7,3.9,2.3,5.1,4.3c0.4,0.6,1,1.1,1.7,1.2
+                c2.3,0.2,4.5,1.3,6,3c1.7,1.8,2.6,4.1,2.6,6.6c0,5.3-4.4,9.6-9.8,9.6H21.4z M54.9,51.5c-1.5,0-2.8-1.2-2.8-2.7
+                c0-1.5,1.3-2.7,2.8-2.7s2.8,1.2,2.8,2.7C57.8,50.2,56.5,51.5,54.9,51.5z"
+                fill="white"/>
+                </svg>
+              </div>
+              <h4 class="mb-3 text-xl font-bold text-dark transition duration-300 ease-in-out hover:text-secondary">
+                Infraestructura
+              </h4>
+              <p align="justify" class="mb-8 text-body-color lg:mb-9">
+                Administración de base de datos, servidores, Active Directory, Azure, DNS y DHCP.
+              </p>
+              </a>
+              <ul class="mb-10 flex flex-wrap items-center justify-start">
+                <a
+                  href="https://deacero.atlassian.net/servicedesk/customer/portal/20/group/119"
+                  class="inline-flex items-center justify-end rounded bg-primary py-2 px-4 text-xs font-medium text-white transition duration-300 ease-in-out hover:bg-opacity-90 hover:shadow-lg mb-2 w-full justify-center"
+                >
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 64 64"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                <g>
+                  <path d="M60.5,41.3L39.1,12.2c-1.7-2.3-4.3-3.6-7.1-3.6c-2.9,0-5.5,1.3-7.1,3.6L3.5,41.3c-2,2.7-2.3,6.2-0.8,9.2s4.5,4.9,7.9,4.9
+                    h42.8c3.4,0,6.4-1.9,7.9-4.9C62.8,47.6,62.5,44,60.5,41.3z M57.3,48.5c-0.8,1.5-2.2,2.4-3.9,2.4H10.6c-1.7,0-3.1-0.9-3.9-2.4
+                    C6,47,6.1,45.3,7.1,44l21.4-29.1c0.8-1.1,2.1-1.8,3.5-1.8c1.4,0,2.7,0.6,3.5,1.8L56.9,44C57.9,45.3,58,47,57.3,48.5z"
+                    fill="white"/>
+                  <path d="M32,23c-1.2,0-2.3,1-2.3,2.3v10.9c0,1.2,1,2.3,2.3,2.3s2.3-1,2.3-2.3V25.2C34.3,24,33.2,23,32,23z"
+                  fill="white"/>
+                  <path d="M32,40.8c-1.2,0-2.3,1-2.3,2.3v0.5c0,1.2,1,2.3,2.3,2.3s2.3-1,2.3-2.3V43C34.3,41.8,33.2,40.8,32,40.8z"
+                  fill="white"/>
+                </g>
+                </svg>
+                <p class="ml-4">
+                  Tengo un problema y necesito ayuda
+                </p>
+                </a>
+                <a
+                  href="https://deacero.atlassian.net/servicedesk/customer/portal/20/group/119"
+                  class="inline-flex items-center justify-end rounded bg-primary py-2 px-4 text-xs font-medium text-white transition duration-300 ease-in-out hover:bg-opacity-90 hover:shadow-lg mb-2 w-full justify-center"
+                >
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 64 64"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                <path d="M57.3,45.8l0-30.6c0-3.2-2.8-5.7-6.2-5.7c-0.6,0-1.2,0.1-1.7,0.2V8.5c0-3.2-2.8-5.7-6.2-5.7
+                c-1.2,0-2.4,0.3-3.3,0.9c-1.1-1.2-2.8-1.9-4.6-1.9c-2.6,0-4.9,1.5-5.8,3.6C28.8,5.1,28.1,5,27.3,5c-3.4,0-6.2,2.6-6.2,5.7v21.6
+                l-1.3-1.6c-2.3-3-6.5-4-9.8-2.2c-1.6,0.9-2.8,2.4-3.2,4.2c-0.4,1.8,0,3.7,1.2,5.3l9,11.9c0.5,0.6,0.9,1.3,1.4,1.9
+                c1.4,2,2.9,4.2,5,5.9c4,3.3,9.4,4.5,14.5,4.5c2.5,0,4.8-0.3,7-0.7C57.4,58.8,57.4,49.4,57.3,45.8z M43.9,57.1
+                c-5.2,1.1-13,1.1-17.6-2.8c-1.6-1.4-2.9-3.2-4.2-5.1c-0.5-0.7-1-1.4-1.5-2.1l-9-11.9c-0.4-0.5-0.5-1.1-0.4-1.6
+                c0.1-0.5,0.4-0.9,0.9-1.2c1.3-0.7,3.2-0.2,4.1,1c0,0,0.1,0.1,0.1,0.1l5.4,6.4c0.6,0.7,1.6,1,2.5,0.7c0.9-0.3,1.5-1.2,1.5-2.1V10.7
+                c0-0.6,0.8-1.2,1.7-1.2c0.9,0,1.7,0.6,1.7,1.2l0,17.6c0,1.2,1,2.3,2.3,2.3s2.2-1,2.2-2.3l0-20.9c0-0.7,0.8-1.2,1.7-1.2
+                S37,6.8,37,7.5v21.6c0,1.2,1,2.3,2.3,2.3s2.3-1,2.3-2.3V8.5c0-0.6,0.8-1.2,1.7-1.2s1.7,0.6,1.7,1.2v22.6c0,1.2,1,2.3,2.3,2.3
+                s2.3-1,2.3-2.3V15.1c0.1-0.6,0.8-1.1,1.7-1.1c0.9,0,1.7,0.6,1.7,1.2v30.3l0,0.4C52.9,50.4,52.2,55.3,43.9,57.1z"
+                  fill="white"/>
+                </svg>
+                <p class="ml-4">
+                  Requiero un servicio
+                </p>
+                </a>
+                <a
+                  href="https://deacero.atlassian.net/servicedesk/customer/portal/20/group/119"
+                  class="inline-flex items-center justify-end rounded bg-primary py-2 px-4 text-xs font-medium text-white transition duration-300 ease-in-out hover:bg-opacity-90 hover:shadow-lg mb-2 w-full justify-center"
+                >
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  stroke-width="1.5"
+                  stroke="white"
+                  class="w-6 h-6"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M16.023 9.348h4.992v-.001M2.985 19.644v-4.992m0 0h4.992m-4.993 0l3.181 3.183a8.25 8.25 0 0013.803-3.7M4.031 9.865a8.25 8.25 0 0113.803-3.7l3.181 3.182m0-4.991v4.99"
+                  />
+                </svg>
+                <p class="ml-4">
+                  Gestión de cambios
+                </p>
+                </a>
+              </ul>
+            </div>
+          </div>
+          
         </div>
+
+        <!-- <div class="-mx-4 flex flex-wrap mt-12 justify-center">
+
+          <div class="w-full px-4 md:w-1/2 lg:w-1/3">
+            <div class="wow fadeInUp group mb-12" data-wow-delay=".1s">
+              <a href="TransformacionProcesos.html">
+              <div
+                class="relative z-10 mb-8 flex h-[70px] w-[70px] items-center justify-center rounded-2xl bg-primary"
+              >
+                <span
+                  class="absolute top-0 left-0 z-[-1] mb-8 flex h-[70px] w-[70px] rotate-[25deg] items-center justify-center rounded-2xl bg-primary bg-opacity-20 duration-300 group-hover:rotate-45"
+                ></span>
+                <svg
+                  width="32"
+                  height="32"
+                  viewBox="0 0 64 64"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                <path d="M48.1,38.5c1.9,0,3.5-1.6,3.5-3.5v-7.4c0-1.9-1.6-3.5-3.5-3.5h-7.4c-1.9,0-3.5,1.6-3.5,3.5v1.4H26.8v-1.4
+                        c0-1.9-1.6-3.5-3.5-3.5h-1.4v-7.9h1.4c1.9,0,3.5-1.6,3.5-3.5V5.3c0-1.9-1.6-3.5-3.5-3.5h-7.4c-1.9,0-3.5,1.6-3.5,3.5v7.4
+                        c0,1.9,1.6,3.5,3.5,3.5h1.4v7.9h-1.4c-1.9,0-3.5,1.6-3.5,3.5V35c0,1.9,1.6,3.5,3.5,3.5h7.4c1.9,0,3.5-1.6,3.5-3.5v-1.4h10.4V35
+                        c0,1.9,1.6,3.5,3.5,3.5h1.4v9.3h-1.4c-1.9,0-3.5,1.6-3.5,3.5v7.4c0,1.9,1.6,3.5,3.5,3.5h7.4c1.9,0,3.5-1.6,3.5-3.5v-7.4
+                        c0-1.9-1.6-3.5-3.5-3.5h-1.4v-9.3H48.1z M16.9,6.2h5.4v5.4h-5.4V6.2z M22.3,34h-5.4v-5.4h2.7c0,0,0,0,0,0s0,0,0,0h2.7V34z
+                        M47.1,57.8h-5.4v-5.4h5.4V57.8z M41.7,28.6h5.4V34h-5.4V28.6z"
+                  fill="white"/>
+                </svg>
+              </div>
+              <h4 class="mb-3 text-xl font-bold text-dark transition duration-300 ease-in-out hover:text-secondary">
+                Transformación y Procesos
+              </h4>
+              <p align="justify" class="mb-8 text-body-color lg:mb-9">
+                Asistencia y orientación en los procesos de negocio, transformación y gestión de proyectos.
+              </p>
+              </a>
+              <ul class="mb-10 flex flex-wrap items-center justify-start">
+                <a
+                  href="https://deacero.atlassian.net/servicedesk/customer/portal/20/group/124"
+                  class="inline-flex items-center justify-end rounded bg-primary py-2 px-4 text-xs font-medium text-white transition duration-300 ease-in-out hover:bg-opacity-90 hover:shadow-lg mb-2 w-full justify-center"
+                >
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 64 64"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                <path d="M57.3,45.8l0-30.6c0-3.2-2.8-5.7-6.2-5.7c-0.6,0-1.2,0.1-1.7,0.2V8.5c0-3.2-2.8-5.7-6.2-5.7
+                c-1.2,0-2.4,0.3-3.3,0.9c-1.1-1.2-2.8-1.9-4.6-1.9c-2.6,0-4.9,1.5-5.8,3.6C28.8,5.1,28.1,5,27.3,5c-3.4,0-6.2,2.6-6.2,5.7v21.6
+                l-1.3-1.6c-2.3-3-6.5-4-9.8-2.2c-1.6,0.9-2.8,2.4-3.2,4.2c-0.4,1.8,0,3.7,1.2,5.3l9,11.9c0.5,0.6,0.9,1.3,1.4,1.9
+                c1.4,2,2.9,4.2,5,5.9c4,3.3,9.4,4.5,14.5,4.5c2.5,0,4.8-0.3,7-0.7C57.4,58.8,57.4,49.4,57.3,45.8z M43.9,57.1
+                c-5.2,1.1-13,1.1-17.6-2.8c-1.6-1.4-2.9-3.2-4.2-5.1c-0.5-0.7-1-1.4-1.5-2.1l-9-11.9c-0.4-0.5-0.5-1.1-0.4-1.6
+                c0.1-0.5,0.4-0.9,0.9-1.2c1.3-0.7,3.2-0.2,4.1,1c0,0,0.1,0.1,0.1,0.1l5.4,6.4c0.6,0.7,1.6,1,2.5,0.7c0.9-0.3,1.5-1.2,1.5-2.1V10.7
+                c0-0.6,0.8-1.2,1.7-1.2c0.9,0,1.7,0.6,1.7,1.2l0,17.6c0,1.2,1,2.3,2.3,2.3s2.2-1,2.2-2.3l0-20.9c0-0.7,0.8-1.2,1.7-1.2
+                S37,6.8,37,7.5v21.6c0,1.2,1,2.3,2.3,2.3s2.3-1,2.3-2.3V8.5c0-0.6,0.8-1.2,1.7-1.2s1.7,0.6,1.7,1.2v22.6c0,1.2,1,2.3,2.3,2.3
+                s2.3-1,2.3-2.3V15.1c0.1-0.6,0.8-1.1,1.7-1.1c0.9,0,1.7,0.6,1.7,1.2v30.3l0,0.4C52.9,50.4,52.2,55.3,43.9,57.1z"
+                  fill="white"/>
+                </svg>
+                <p class="ml-4">
+                  Requiero un servicio
+                </p>
+                </a>
+              </ul>
+            </div>
+          </div>
+
+        </div> -->
+      
 
         <!-- ====== Transformación y Digital Section End -->
 
@@ -1899,7 +2373,7 @@
 
           <div class="w-full px-4 md:w-1/2 lg:w-1/5">
             <div class="wow fadeInUp group mb-12" data-wow-delay=".1s">
-              <a "http://appnet05:2311/Pages/STI_CU204_Pag1.aspx?ClaGrupoTicket=3&ClaTipoTicket=1">
+              <a href="http://appnet05:2311/Pages/STI_CU204_Pag1.aspx?ClaGrupoTicket=3&ClaTipoTicket=1">
               <div class="relative z-10 mb-8 flex h-[70px] w-[70px] items-center justify-center rounded-2xl bg-secondary">
                 <span
                   class="absolute top-0 left-0 z-[-1] mb-8 flex h-[70px] w-[70px] rotate-[25deg] items-center justify-center rounded-2xl bg-secondary bg-opacity-20 duration-300 group-hover:rotate-45"
@@ -1932,7 +2406,7 @@
 
           <div class="w-full px-4 md:w-1/2 lg:w-1/5">
             <div class="wow fadeInUp group mb-12" data-wow-delay=".1s">
-              <a "http://appnet05:2311/Pages/STI_CU204_Pag1.aspx?ClaGrupoTicket=3&ClaTipoTicket=2">
+              <a href="http://appnet05:2311/Pages/STI_CU204_Pag1.aspx?ClaGrupoTicket=3&ClaTipoTicket=2">
               <div
                 class="relative z-10 mb-8 flex h-[70px] w-[70px] items-center justify-center rounded-2xl bg-secondary"
               >
@@ -1970,7 +2444,7 @@
           
           <div class="w-full px-4 md:w-1/2 lg:w-1/5">
             <div class="wow fadeInUp group mb-12" data-wow-delay=".1s">
-              <a "http://appnet05:2311/Pages/STI_CU204_Pag1.aspx?ClaGrupoTicket=3&ClaTipoTicket=3">
+              <a href="http://appnet05:2311/Pages/STI_CU204_Pag1.aspx?ClaGrupoTicket=3&ClaTipoTicket=3">
               <div
                 class="relative z-10 mb-8 flex h-[70px] w-[70px] items-center justify-center rounded-2xl bg-secondary"
               >
@@ -2002,7 +2476,7 @@
 
           <div class="w-full px-4 md:w-1/2 lg:w-1/5">
             <div class="wow fadeInUp group mb-12" data-wow-delay=".1s">
-              <a "http://appnet05:2311/Pages/STI_CU204_Pag1.aspx?ClaGrupoTicket=4&ClaTipoTicket=4">
+              <a href="http://appnet05:2311/Pages/STI_CU204_Pag1.aspx?ClaGrupoTicket=4&ClaTipoTicket=4">
               <div class="relative z-10 mb-8 flex h-[70px] w-[70px] items-center justify-center rounded-2xl bg-secondary">
                 <span
                   class="absolute top-0 left-0 z-[-1] mb-8 flex h-[70px] w-[70px] rotate-[25deg] items-center justify-center rounded-2xl bg-secondary bg-opacity-20 duration-300 group-hover:rotate-45"
@@ -2075,7 +2549,7 @@
 
           <div class="w-full px-4 md:w-1/2 lg:w-1/5">
             <div class="wow fadeInUp group mb-12" data-wow-delay=".1s">
-              <a "http://appnet05:2311/Pages/STI_CU204_Pag1.aspx?ClaGrupoTicket=5&ClaTipoTicket=1">
+              <a href="http://appnet05:2311/Pages/STI_CU204_Pag1.aspx?ClaGrupoTicket=5&ClaTipoTicket=1">
               <div class="relative z-10 mb-8 flex h-[70px] w-[70px] items-center justify-center rounded-2xl bg-secondary">
                 <span
                   class="absolute top-0 left-0 z-[-1] mb-8 flex h-[70px] w-[70px] rotate-[25deg] items-center justify-center rounded-2xl bg-secondary bg-opacity-20 duration-300 group-hover:rotate-45"
@@ -2109,7 +2583,7 @@
 
           <div class="w-full px-4 md:w-1/2 lg:w-1/5">
             <div class="wow fadeInUp group mb-12" data-wow-delay=".1s">
-              <a "http://appnet05:2311/Pages/STI_CU204_Pag1.aspx?ClaGrupoTicket=5&ClaTipoTicket=2">
+              <a href="http://appnet05:2311/Pages/STI_CU204_Pag1.aspx?ClaGrupoTicket=5&ClaTipoTicket=2">
               <div
                 class="relative z-10 mb-8 flex h-[70px] w-[70px] items-center justify-center rounded-2xl bg-secondary"
               >
@@ -2149,7 +2623,7 @@
           
           <div class="w-full px-4 md:w-1/2 lg:w-1/5">
             <div class="wow fadeInUp group mb-12" data-wow-delay=".1s">
-              <a "http://appnet05:2311/Pages/STI_CU204_Pag1.aspx?ClaGrupoTicket=5&ClaTipoTicket=3">
+              <a href="http://appnet05:2311/Pages/STI_CU204_Pag1.aspx?ClaGrupoTicket=5&ClaTipoTicket=3">
               <div
                 class="relative z-10 mb-8 flex h-[70px] w-[70px] items-center justify-center rounded-2xl bg-secondary"
               >
@@ -2181,7 +2655,7 @@
 
           <div class="w-full px-4 md:w-1/2 lg:w-1/5">
             <div class="wow fadeInUp group mb-12" data-wow-delay=".1s">
-              <a "http://appnet05:2311/Pages/STI_CU204_Pag1.aspx?ClaGrupoTicket=5&ClaTipoTicket=4">
+              <a href="http://appnet05:2311/Pages/STI_CU204_Pag1.aspx?ClaGrupoTicket=5&ClaTipoTicket=4">
               <div
                 class="relative z-10 mb-8 flex h-[70px] w-[70px] items-center justify-center rounded-2xl bg-secondary"
               >
@@ -2218,7 +2692,7 @@
 
           <div class="w-full px-4 md:w-1/2 lg:w-1/5">
             <div class="wow fadeInUp group mb-12" data-wow-delay=".1s">
-              <a "http://appnet05:2311/Pages/STI_CU204_Pag1.aspx?ClaGrupoTicket=5&ClaTipoTicket=5">
+              <a href="http://appnet05:2311/Pages/STI_CU204_Pag1.aspx?ClaGrupoTicket=5&ClaTipoTicket=5">
               <div
                 class="relative z-10 mb-8 flex h-[70px] w-[70px] items-center justify-center rounded-2xl bg-secondary"
               >
@@ -2286,7 +2760,7 @@
 
           <div class="w-full px-4 md:w-1/2 lg:w-1/5">
             <div class="wow fadeInUp group mb-12" data-wow-delay=".1s">
-              <a "http://appnet05:2311/Pages/STI_CU204_Pag1.aspx?ClaGrupoTicket=6&ClaTipoTicket=2">
+              <a href="http://appnet05:2311/Pages/STI_CU204_Pag1.aspx?ClaGrupoTicket=6&ClaTipoTicket=2">
               <div class="relative z-10 mb-8 flex h-[70px] w-[70px] items-center justify-center rounded-2xl bg-secondary">
                 <span
                   class="absolute top-0 left-0 z-[-1] mb-8 flex h-[70px] w-[70px] rotate-[25deg] items-center justify-center rounded-2xl bg-secondary bg-opacity-20 duration-300 group-hover:rotate-45"
@@ -2333,7 +2807,7 @@
 
           <div class="w-full px-4 md:w-1/2 lg:w-1/5">
             <div class="wow fadeInUp group mb-12" data-wow-delay=".1s">
-              <a "http://appnet05:2311/Pages/STI_CU204_Pag1.aspx?ClaGrupoTicket=6&ClaTipoTicket=3">
+              <a href="http://appnet05:2311/Pages/STI_CU204_Pag1.aspx?ClaGrupoTicket=6&ClaTipoTicket=3">
               <div
                 class="relative z-10 mb-8 flex h-[70px] w-[70px] items-center justify-center rounded-2xl bg-secondary"
               >
@@ -2365,7 +2839,7 @@
           
           <div class="w-full px-4 md:w-1/2 lg:w-1/5">
             <div class="wow fadeInUp group mb-12" data-wow-delay=".1s">
-              <a "http://appnet05:2311/Pages/STI_CU204_Pag1.aspx?ClaGrupoTicket=6&ClaTipoTicket=4">
+              <a href="http://appnet05:2311/Pages/STI_CU204_Pag1.aspx?ClaGrupoTicket=6&ClaTipoTicket=4">
               <div
                 class="relative z-10 mb-8 flex h-[70px] w-[70px] items-center justify-center rounded-2xl bg-secondary"
               >
@@ -2397,7 +2871,7 @@
 
           <div class="w-full px-4 md:w-1/2 lg:w-1/5">
             <div class="wow fadeInUp group mb-12" data-wow-delay=".1s">
-              <a "http://appnet05:2311/Pages/STI_CU204_Pag1.aspx?ClaGrupoTicket=6&ClaTipoTicket=5">
+              <a href="http://appnet05:2311/Pages/STI_CU204_Pag1.aspx?ClaGrupoTicket=6&ClaTipoTicket=5">
               <div
                 class="relative z-10 mb-8 flex h-[70px] w-[70px] items-center justify-center rounded-2xl bg-secondary"
               >
@@ -2429,7 +2903,7 @@
 
           <div class="w-full px-4 md:w-1/2 lg:w-1/5">
             <div class="wow fadeInUp group mb-12" data-wow-delay=".1s">
-              <a "http://appnet05:2311/Pages/STI_CU204_Pag1.aspx?ClaGrupoTicket=10&ClaTipoTicket=1">
+              <a href="http://appnet05:2311/Pages/STI_CU204_Pag1.aspx?ClaGrupoTicket=10&ClaTipoTicket=1">
               <div class="relative z-10 mb-8 flex h-[70px] w-[70px] items-center justify-center rounded-2xl bg-secondary">
                 <span
                   class="absolute top-0 left-0 z-[-1] mb-8 flex h-[70px] w-[70px] rotate-[25deg] items-center justify-center rounded-2xl bg-secondary bg-opacity-20 duration-300 group-hover:rotate-45"
@@ -2504,7 +2978,7 @@
 
           <div class="w-full px-4 md:w-1/2 lg:w-1/5">
             <div class="wow fadeInUp group mb-12" data-wow-delay=".1s">
-              <a "http://appnet05:2311/Pages/STI_CU204_Pag1.aspx?ClaGrupoTicket=12&ClaTipoTicket=1">
+              <a href="http://appnet05:2311/Pages/STI_CU204_Pag1.aspx?ClaGrupoTicket=12&ClaTipoTicket=1">
               <div class="relative z-10 mb-8 flex h-[70px] w-[70px] items-center justify-center rounded-2xl bg-secondary">
                 <span
                   class="absolute top-0 left-0 z-[-1] mb-8 flex h-[70px] w-[70px] rotate-[25deg] items-center justify-center rounded-2xl bg-secondary bg-opacity-20 duration-300 group-hover:rotate-45"
@@ -2540,7 +3014,7 @@
 
           <div class="w-full px-4 md:w-1/2 lg:w-1/5">
             <div class="wow fadeInUp group mb-12" data-wow-delay=".1s">
-              <a "http://appnet05:2311/Pages/STI_CU204_Pag1.aspx?ClaGrupoTicket=12&ClaTipoTicket=2">
+              <a href="http://appnet05:2311/Pages/STI_CU204_Pag1.aspx?ClaGrupoTicket=12&ClaTipoTicket=2">
               <div
                 class="relative z-10 mb-8 flex h-[70px] w-[70px] items-center justify-center rounded-2xl bg-secondary"
               >
@@ -2577,7 +3051,7 @@
           
           <div class="w-full px-4 md:w-1/2 lg:w-1/5">
             <div class="wow fadeInUp group mb-12" data-wow-delay=".1s">
-              <a "http://appnet05:2311/Pages/STI_CU204_Pag1.aspx?ClaGrupoTicket=12&ClaTipoTicket=3">
+              <a href="http://appnet05:2311/Pages/STI_CU204_Pag1.aspx?ClaGrupoTicket=12&ClaTipoTicket=3">
               <div
                 class="relative z-10 mb-8 flex h-[70px] w-[70px] items-center justify-center rounded-2xl bg-secondary"
               >
@@ -2612,7 +3086,7 @@
 
           <div class="w-full px-4 md:w-1/2 lg:w-1/5">
             <div class="wow fadeInUp group mb-12" data-wow-delay=".1s">
-              <a "http://appnet05:2311/Pages/STI_CU204_Pag1.aspx?ClaGrupoTicket=9&ClaTipoTicket=1">
+              <a href="http://appnet05:2311/Pages/STI_CU204_Pag1.aspx?ClaGrupoTicket=9&ClaTipoTicket=1">
               <div class="relative z-10 mb-8 flex h-[70px] w-[70px] items-center justify-center rounded-2xl bg-secondary">
                 <span
                   class="absolute top-0 left-0 z-[-1] mb-8 flex h-[70px] w-[70px] rotate-[25deg] items-center justify-center rounded-2xl bg-secondary bg-opacity-20 duration-300 group-hover:rotate-45"
@@ -2682,7 +3156,7 @@
 
           <div class="w-full px-4 md:w-1/2 lg:w-1/5">
             <div class="wow fadeInUp group mb-12" data-wow-delay=".1s">
-              <a "http://appnet05:2311/Pages/STI_CU204_Pag1.aspx?ClaGrupoTicket=13&ClaTipoTicket=1">
+              <a href="http://appnet05:2311/Pages/STI_CU204_Pag1.aspx?ClaGrupoTicket=13&ClaTipoTicket=1">
               <div class="relative z-10 mb-8 flex h-[70px] w-[70px] items-center justify-center rounded-2xl bg-secondary">
                 <span
                   class="absolute top-0 left-0 z-[-1] mb-8 flex h-[70px] w-[70px] rotate-[25deg] items-center justify-center rounded-2xl bg-secondary bg-opacity-20 duration-300 group-hover:rotate-45"
@@ -2729,7 +3203,7 @@
 
           <div class="w-full px-4 md:w-1/2 lg:w-1/5">
             <div class="wow fadeInUp group mb-12" data-wow-delay=".1s">
-              <a "http://appnet05:2311/Pages/STI_CU204_Pag1.aspx?ClaGrupoTicket=13&ClaTipoTicket=2">
+              <a href="http://appnet05:2311/Pages/STI_CU204_Pag1.aspx?ClaGrupoTicket=13&ClaTipoTicket=2">
               <div
                 class="relative z-10 mb-8 flex h-[70px] w-[70px] items-center justify-center rounded-2xl bg-secondary"
               >
@@ -2768,7 +3242,7 @@
           
           <div class="w-full px-4 md:w-1/2 lg:w-1/5">
             <div class="wow fadeInUp group mb-12" data-wow-delay=".1s">
-              <a "http://appnet05:2311/Pages/STI_CU204_Pag1.aspx?ClaGrupoTicket=13&ClaTipoTicket=3">
+              <a href="http://appnet05:2311/Pages/STI_CU204_Pag1.aspx?ClaGrupoTicket=13&ClaTipoTicket=3">
               <div
                 class="relative z-10 mb-8 flex h-[70px] w-[70px] items-center justify-center rounded-2xl bg-secondary"
               >
@@ -2802,7 +3276,7 @@
 
           <div class="w-full px-4 md:w-1/2 lg:w-1/5">
             <div class="wow fadeInUp group mb-12" data-wow-delay=".1s">
-              <a "http://appnet05:2311/Pages/STI_CU204_Pag1.aspx?ClaGrupoTicket=13&ClaTipoTicket=4">
+              <a href="http://appnet05:2311/Pages/STI_CU204_Pag1.aspx?ClaGrupoTicket=13&ClaTipoTicket=4">
               <div
                 class="relative z-10 mb-8 flex h-[70px] w-[70px] items-center justify-center rounded-2xl bg-secondary"
               >
@@ -2851,7 +3325,7 @@
 
           <div class="w-full px-4 md:w-1/2 lg:w-1/5">
             <div class="wow fadeInUp group mb-12" data-wow-delay=".1s">
-              <a "http://appnet05:2311/Pages/STI_CU204_Pag1.aspx?ClaGrupoTicket=13&ClaTipoTicket=5">
+              <a href="http://appnet05:2311/Pages/STI_CU204_Pag1.aspx?ClaGrupoTicket=13&ClaTipoTicket=5">
               <div
                 class="relative z-10 mb-8 flex h-[70px] w-[70px] items-center justify-center rounded-2xl bg-secondary"
               >
@@ -2880,7 +3354,7 @@
               <h4 class="mb-3 text-xl font-bold text-dark transition duration-300 ease-in-out hover:text-secondary">
                 Solicitud de Trámites
               </h4>
-              </a>
+            </a>
             </div>
           </div>
 
@@ -2903,8 +3377,6 @@
 
     </section>
     <!-- ====== Servicios Section End -->
-
-
 
 
     <!-- ====== About Section Start -->
@@ -2978,15 +3450,15 @@
                   Mediante el Help Center, es posible crear y dar seguimiento a tickets llenando formularios.
                   Para obtener más información acerca del uso de Jira, consulta las
                   
-                  <a class="hover:underline text-secondary" "GuiasSelfService.html">
+                  <a class="hover:underline text-secondary" href="guias-tyd.html">
                     Guías de Self Service.
                   </a>
                   
-                  <!-- <a class="hover:underline text-secondary" "https://deacero0.sharepoint.com/:p:/t/MacroProceso-TecnologayDigital/EQTab8ovSFVIgFqEvlRSHJQB4iKyKzeibIeEDo4UyC0faA?e=HYysQ8">
+                  <!-- <a class="hover:underline text-secondary" href="https://deacero0.sharepoint.com/:p:/t/MacroProceso-TecnologayDigital/EQTab8ovSFVIgFqEvlRSHJQB4iKyKzeibIeEDo4UyC0faA?e=HYysQ8">
                       User Manual
                   </a>
                   and
-                  <a class="hover:underline text-secondary" "https://deacero0.sharepoint.com/:p:/t/MacroProceso-TecnologayDigital/EQdearXB7wdCiQHXqPfEUhYBD2uS0hGYJJp8BmgfTYpYFg?e=lDgT6a">
+                  <a class="hover:underline text-secondary" href="https://deacero0.sharepoint.com/:p:/t/MacroProceso-TecnologayDigital/EQdearXB7wdCiQHXqPfEUhYBD2uS0hGYJJp8BmgfTYpYFg?e=lDgT6a">
                       Technical Manual
                   </a>
                   files. -->
@@ -3024,7 +3496,7 @@
               <div class="faq-content hidden pl-[62px]">
                 <p class="py-3 text-base leading-relaxed text-body-color">
                   En el Help Center hay un apartado de Reportes, para consultarlos haz click
-                  <a class="hover:underline text-secondary" "ReportesIncidentes.html">
+                  <a class="hover:underline text-secondary" href="reportes-incidentes.html">
                       aquí.
                   </a>
                 </p>
@@ -3063,7 +3535,7 @@
                   El tiempo que tardará la solicitud dependerá de la categoria en la que cae el servicio en cuestión
                   (GOLD, SILVER o BRONZE). Para consultar mayor información acerca de la categorización de servicios,
                   ingresa al apartado de
-                  <a class="hover:underline text-secondary" "CategorizacionServiciosTyD.html">
+                  <a class="hover:underline text-secondary" href="categorizacion-servicios-tyd.html">
                       Categorización de los Servicios de Transformación y Digital.
                   </a>
                 </p>
@@ -3102,11 +3574,11 @@
               <div class="faq-content hidden pl-[62px]">
                 <p class="py-3 text-base leading-relaxed text-body-color">
                   En este 
-                  <a class="hover:underline text-secondary" "#home">
+                  <a class="hover:underline text-secondary" href="#home">
                       Help Center,
                   </a>
                   hay una liga al
-                  <a class="hover:underline text-secondary" "https://deacero.statuspage.io/private-only?page=wgswt9psc0ls">
+                  <a class="hover:underline text-secondary" href="https://deacero.statuspage.io/private-only?page=wgswt9psc0ls">
                       Dashboard de Estatus de Servicios
                   </a>
                   donde se puede consultar el estado de los servicios que ofrece TyD en tiempo real.
@@ -3144,7 +3616,7 @@
               <div class="faq-content hidden pl-[62px]">
                 <p class="py-3 text-base leading-relaxed text-body-color">
                   En la sección de
-                  <a class="hover:underline text-secondary" "#contact">
+                  <a class="hover:underline text-secondary" href="#contact">
                       Contacto
                   </a>
                   de esta página, se encuentra una tarjeta para ingresar datos y enviar una sugerencia para contactarnos.
@@ -3183,7 +3655,7 @@
                 <p class="py-3 text-base leading-relaxed text-body-color">
                   Sí, para todos aquellos servicios fuera de TyD se seguirá utilizando el sistema de tickest anterior (STI).
                   Para levantar un ticket, busca la opción deseada dentro de este Help Center
-                  <a class="hover:underline text-secondary" "#servicios">
+                  <a class="hover:underline text-secondary" href="#servicios">
                       (Servicios).
                   </a>
                 </p>
@@ -3198,7 +3670,7 @@
             data-wow-delay=".1s
               ">
               <a
-                "GuiasSelfService.html"
+                href="guias-tyd.html"
                 class="font-medium transition duration-300 ease-in-out hover:opacity-70 sm:px-10">
                 <h2 class="flex text-lg font-bold text-primary sm:text-xl md:text-[32px] items-center">
                   Guías de Self Service
@@ -5145,7 +5617,6 @@
         
         </div>
 
-
       
 
       <div class="container mt-16">
@@ -5491,7 +5962,7 @@
                     <h5 class="mb-6 text-lg font-semibold">¿Cómo Podemos Ayudarte?</h5>
                     <p class="text-base text-body-color transition duration-300 ease-in-out hover:text-secondary"
                     data-wow-delay=".1s">
-                    <a "mailto:oficinaservicio@deacero.com"> oficinaservicio@deacero.com </a></p>
+                    <a href="mailto:oficinaservicio@deacero.com"> oficinaservicio@deacero.com </a></p>
                   </div>
                 </div>
               </div>
@@ -5518,7 +5989,7 @@
                 <p align="right" class="text-base text-[#f3f4fe]">
                   Copyright © 2024
                   <a
-                    "https://www.deacero.com/"
+                    href="https://www.deacero.com/"
                     rel="nofollow noopner"
                     target="_blank"
                     class="text-secondary hover:underline"
@@ -5854,6 +6325,6 @@
       }
 
       window.document.addEventListener("scroll", onScroll);
-</script>
+    </script>
   </body>
 </html>
