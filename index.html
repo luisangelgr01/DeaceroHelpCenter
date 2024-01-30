@@ -14,8 +14,8 @@
     <link rel="stylesheet" href="assets/css/tailwind.css" />
     <link rel="stylesheet" href="assets/css/popup.css" />
         <!-- ==== SSO AZURE ==== -->
-    <script src="https://alcdn.msauth.net/browser/2.17.0/js/msal-browser.min.js"></script>
-    <script src="assets/js/sso-azure.js"></script>
+    <!-- <script src="https://alcdn.msauth.net/browser/2.17.0/js/msal-browser.min.js"></script>
+    <script src="assets/js/sso-azure.js"></script> -->
     
     <!-- ==== WOW JS ==== -->
     <script src="assets/js/wow.min.js"></script>
@@ -27,18 +27,28 @@
     <!-- ====== Navbar Section Start -->
     <div class="popup-container">
       <div class="popup">
-          <div class="popup-title">¡Bienvenido a Help Center DEACERO!</div>
+          <div class="popup-title">
+            ¡Bienvenido a Help Center DEACERO!<br>
+            <em class="text-secondary"> Welcome to DEACERO Help Center!</em>
+          </div>
           <div>
-            Por favor, indica la dirección a la que perteneces.
+            Por favor, indica la dirección a la que perteneces. <br>
+            <em class="text-secondary">Please select the business department you work for</em>
           </div>
           <a href="vista-usuario-tyd.html">
             <div class="popup-button">
-              <span class="popuptext" id="myPopup"> Dirección de Transformación y Digital</span>
+              <span class="popuptext" id="myPopup">
+                Dirección de Transformación y Digital <br>
+                <em class="text-secondary">Transformation and Digital</em>
+              </span>
             </div>
           </a>
           <a href="vista-usuario-no-tyd.html">
             <div class="popup-button">
-              <span class="popuptext" id="myPopup">Otra dirección</span>
+              <span class="popuptext" id="myPopup">
+                Otra dirección<br>
+                <em class="text-secondary">Other department</em>
+              </span>
             </div>
           </a>
       </div>
